@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BaseController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,4 @@ use App\Http\Controllers\BaseController;
 */
 
 Route::get('/', [BaseController::class, 'index'])->name('root');
+Route::get('dashboard', [AdminController::class, 'index']);

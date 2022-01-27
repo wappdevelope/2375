@@ -1,0 +1,12 @@
+.html-content-label {
+    font-size: large;
+}
+
+#answer {
+    width: 100%;
+}
+
+.art-image {
+    max-height: 350px;
+    overflow: hidden;
+}
