@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,50 +23,57 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-body{
+body {
     font-family: Nunito;
 }
 
 /*  ------header start -- */
-header{
+header {
     background-color: #fff;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
 }
-.header-main{
+
+.header-main {
     width: 87%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header-main>div{
+
+.header-main>div {
     width: 40%;
 }
 
-.header-main>div:first-child{
+.header-main>div:first-child {
     display: flex;
 }
-#search-input{
+
+#search-input {
     background: transparent;
     border: none;
     border-bottom: 1px solid #C4C4C4;
     width: 61%;
 }
+
 .search-input-field,
-.search-input-field form>div{
+.search-input-field form>div {
     display: flex;
     justify-content: flex-end;
 }
-.search-input-field form>div{
+
+.search-input-field form>div {
     align-items: center;
 }
-.search-input-field form{
+
+.search-input-field form {
     width: 100%;
 }
-.search-input-field form img{
+
+.search-input-field form img {
     cursor: pointer;
 }
 
@@ -74,18 +81,19 @@ header{
 
 
 /* -----international part start----- */
-main{
-    background: url(../storage/images/AdobeStock_344993732.png) no-repeat center/cover;
+main {
+    background: url(../images/AdobeStock_344993732.png) no-repeat center/cover;
     margin-top: 125px;
 }
 
-.opacity-div{
+.opacity-div {
     width: 100%;
     height: 100%;
     background: rgba(51, 51, 51, 0.46);
     padding: 109px 0;
 }
-.img-group{
+
+.img-group {
     align-items: center;
     width: 88%;
     margin: auto;
@@ -93,10 +101,11 @@ main{
     justify-content: space-between;
 }
 
-.img-group>div:first-child{
+.img-group>div:first-child {
     width: 12%;
 }
-.img-group>div:last-child{
+
+.img-group>div:last-child {
     width: 70%;
 }
 
@@ -104,60 +113,66 @@ main{
 
 
 /* ----start about us----- */
-.about-us-left>div:first-child{
+.about-us-left>div:first-child {
     margin-left: 12%;
 }
-.images-list>li:not(:last-child){
+
+.images-list>li:not(:last-child) {
     margin-bottom: 24px;
 }
 
-.about-us>div{
+.about-us>div {
     display: flex;
     justify-content: space-between;
 }
 
-.about-us-text{
+.about-us-text {
     background: #1D1E20;
     color: white;
 }
 
-.img-div{
+.img-div {
     position: relative;
     width: 50%;
 }
-.img-div>img{
+
+.img-div>img {
     width: 100%;
 }
 
-.opacity-div1{
+.opacity-div1 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(51, 51, 51, 0.46);;
+    background-color: rgba(51, 51, 51, 0.46);
+    ;
 }
 
-.about-us-title{
+.about-us-title {
     font-weight: bold;
     font-size: 36px;
     line-height: 49px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.about-us-info{
+
+.about-us-info {
     font-weight: normal;
     font-size: 22px;
     line-height: 41px;
     color: #FFFFFF;
 }
-.about-us-left{
+
+.about-us-left {
     display: flex;
     align-items: center;
     position: relative;
     width: 50%;
 }
-.about{
+
+.about {
     position: absolute;
     width: 90%;
     right: -262px;
@@ -169,20 +184,23 @@ main{
 
 /*------- start education part---- */
 
-.education{
+.education {
     margin-top: 76px;
 }
-.education-info{
+
+.education-info {
     text-align: center;
 }
-.education-info h2{
+
+.education-info h2 {
     font-weight: bold;
     font-size: 36px;
     line-height: 49px;
     text-transform: uppercase;
     color: #27292B;
 }
-.education-info h3{
+
+.education-info h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
@@ -190,7 +208,7 @@ main{
     margin-top: 56px;
 }
 
-.education-info p{
+.education-info p {
     font-size: 18px;
     line-height: 28px;
     color: #27292B;
@@ -198,60 +216,65 @@ main{
     margin: 14px auto 60px;
 }
 
-.color-granding>h3{
+.color-granding>h3 {
     text-align: center;
     margin-bottom: 15px;
 }
 
-.colored-div{
+.colored-div {
     display: flex;
     width: 88%;
-    margin:auto;
+    margin: auto;
 }
 
-.colored-div .images-list{
+.colored-div .images-list {
     width: 12%;
 }
 
 .clarity,
-.cut{
+.cut {
     text-align: center;
     margin-top: 104px;
 }
 
 .clarity>h3,
-.cut>h3{
+.cut>h3 {
     margin-bottom: 15px;
 }
-.imaged-div{
+
+.imaged-div {
     text-align: center;
     width: 80%;
 }
 
-.imaged-div img{
+.imaged-div img {
     width: 80%;
 }
-.dimond-img{
+
+.dimond-img {
     width: 80%;
     margin: auto;
 }
+
 /*------- end education part---- */
 
 
 /* ------start diamond part---- */
 
-.diamonds{
+.diamonds {
     background: #27292B;
     text-align: center;
     color: white;
     padding: 71px 0;
 }
-.diamonds h3{
+
+.diamonds h3 {
     font-size: 24px;
     line-height: 33px;
     margin-bottom: 31px;
 }
-.diamonds p{
+
+.diamonds p {
     line-height: 38px;
     font-weight: normal;
     font-size: 24px;
@@ -264,26 +287,29 @@ main{
 
 /*--- start synthetic part---- */
 
-.synthetic{
-    background: url(../storage/images/AdobeStock_331123572.png) no-repeat center/cover;
+.synthetic {
+    background: url(../images/AdobeStock_331123572.png) no-repeat center/cover;
     color: white;
     text-align: center;
 }
 
-.synthetic-and-word{
+.synthetic-and-word {
     width: 60%;
     margin: auto;
     padding: 144px;
     border: 1px solid white;
 }
-.synthetic .opacity-div{
+
+.synthetic .opacity-div {
     padding: 80px 0;
 }
-.synthetic-and-word h2{
+
+.synthetic-and-word h2 {
     font-size: 36px;
     line-height: 49px;
 }
-.synthetic-and-word p{
+
+.synthetic-and-word p {
     font-size: 24px;
     line-height: 38px;
     margin-top: 22px;
@@ -294,12 +320,13 @@ main{
 
 /* ------start search part----- */
 
-.search{
+.search {
     background: #27292B;
     padding: 78px 0;
 }
+
 .search-parent,
-.footer-part{
+.footer-part {
     display: flex;
     align-items: center;
     width: 88%;
@@ -310,33 +337,33 @@ main{
     width: 12%;
 }
 
-.report{
+.report {
     text-align: center;
     color: white;
     width: 75%;
 }
 
-.report h2{
+.report h2 {
     font-size: 36px;
     line-height: 49px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.report h3{
+.report h3 {
     font-size: 24px;
     line-height: 33px;
     margin-top: 39px;
 }
 
-.report p{
+.report p {
     font-size: 18px;
     line-height: 28px;
     width: 56%;
     margin: 10px auto 39px;
 }
 
-.report input{
+.report input {
     background: rgba(196, 196, 196, 0.2);
     border: 1px solid #FFFFFF;
     border-radius: 44px;
@@ -345,49 +372,52 @@ main{
     color: white;
 }
 
-.input-div{
+.input-div {
     position: relative;
     width: 40%;
     margin: auto;
     max-width: 600px;
 }
 
-.input-div img{
+.input-div img {
     position: absolute;
     right: 18px;
     top: 10px;
     cursor: pointer;
 }
-.contact-us-title{
+
+.contact-us-title {
     font-size: 36px;
     line-height: 49px;
     text-transform: uppercase;
     color: #27292B;
     margin-bottom: 20px;
 }
+
 /* ----end search part---- */
 
 
 
 /* -----start footer part------ */
-footer{
+footer {
     padding: 65px 0;
 }
-.footer-part .footer-list{
+
+.footer-part .footer-list {
     width: 12%;
 }
 
-.contact-us-part{
+.contact-us-part {
     width: 75%;
     text-align: center;
 }
 
-.contact-us-form{
+.contact-us-form {
     width: 30%;
     margin: auto;
 }
 
-.contact-us-form label{
+.contact-us-form label {
     font-size: 16px;
     line-height: 22px;
     color: #4D4D4D;
@@ -397,28 +427,29 @@ footer{
 
 
 .contact-us-form,
-.contact-us-form>div{
+.contact-us-form>div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact-us-form>div{
+.contact-us-form>div {
     align-items: flex-start;
     width: 100%;
 }
 
-.contact-us-form>div:not(:last-child){
+.contact-us-form>div:not(:last-child) {
     margin-bottom: 20px;
 }
-.contact-us-form input{
+
+.contact-us-form input {
     width: 100%;
     height: 50px;
     border: 1px solid #000000;
     padding: 0 10px;
 }
 
-.contact-us-form textarea{
+.contact-us-form textarea {
     resize: none;
     height: 162px;
     width: 100%;
@@ -426,7 +457,7 @@ footer{
     border: 1px solid #000000;
 }
 
-.contact-us-form button{
+.contact-us-form button {
     background: #261F1A;
     border-radius: 10px;
     color: white;
@@ -442,814 +473,1258 @@ footer{
 /* ------end footer part------*/
 
 
+/* --------start not-found part------ */
+.not-found-part {
+    width: 87%;
+    margin: 250px auto 0;
+    text-align: center;
+}
+
+.oops-title {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #11163C;
+}
+
+.not-found-text {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0083AC;
+    margin-top: 11px;
+}
+
+.not-found-part img {
+    margin-top: 87px;
+}
+
+/* --------end not-found part------ */
+
+
+/* ------------- start pdf file ----------------- */
+.pdf-file-part {
+    margin-top: 200px;
+}
+
+.pdf-part h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #11163C;
+    margin-bottom: 57px;
+}
+
+.pdf-part h2 span {
+    color: #0083AC;
+}
+
+.pdf-full-info {
+    width: 65%;
+    margin: auto;
+    background: #FDFDFD;
+    box-shadow: 0px 4px 24px rgb(196 196 196 / 28%);
+    border-radius: 10px;
+    padding: 67px;
+    margin-bottom: 57px;
+}
+
+.pdf-info h3 {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0083AC;
+    margin-bottom: 21px;
+}
+
+.pdf-info p {
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.functional-icon {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.functional-icon img:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* ------------- end pdf file ----------------- */
+
+
 
 /* -------media part------------ */
 
 
 /* -------smartphone------- */
 
-@media(min-width:320px) and (max-width:576px){
-   .header-main{
-       flex-wrap: wrap;
-       padding: 10px;
-       width: 98%;
-   }
-   .header-main>div,
-   .img-group>div:last-child img,
-   .img-div>img{
-       width: 100%;
-   }
-   main{
-       background: #acb4e8;
-   }
-   #search-input{
-       width: 229px;
-   }
-   #logo{
-       width: 300px;
-       margin: auto;
-   }
-   .search-input-field form>div{
-       flex-wrap: wrap;
-       width: 90%;
-       margin: auto;
-       align-items: center;
-       justify-content: center;
-   }
-   .img-group,
-   .about-us>div,
-   .about-us-left,
-   .colored-div,
-   .search-parent,
-   .footer-part{
-       flex-wrap: wrap;
-   }
-   .img-group>div{
-       width: 100% !important;
-   }
-   .about{
-       position: static;
-       padding: 10px 15px;
-   }
-   .opacity-div{
-       padding: 40px 0;
-   }
-   .img-group .images-list{
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       width: 70%;
-   }
-   .images-list>li{
-       margin-bottom: 10px !important;
-   }
-   .about-us-title,
-   .education-info h2,
-   .synthetic-and-word h2,
-   .report h2,
-   .contact-us-title{
-       font-size: 25px;
-       line-height: 30px;
-   }
-   .about-us-info {
-       font-size: 17px;
-       line-height: 27px;
-   }
-   .education,
-   .education-info h3 {
-       margin-top: 25px;
-   }
-   .education-info p{
-       width: 90%;
-       margin: 14px auto 25px;
-   }
-   .dimond-img{
-       margin-left: 0;
-   }
-   .colored-div>img,
-   .diamonds img,
-   .contact-us-part,
-   .imaged-div{
-       width: 100%;
-   }
-   .imaged-div{
-       margin: 20px 0;
-   }
-   .clarity img,
-   .cut img{
-       width: 80%;
-       margin: auto;
-   }
-   .about-us-left{
-       padding-top: 20px;
-   }
-   .about-us-left>div:first-child{
-       width: 73%;
-       margin-left: 0;
-   }
-   .contact-us-form {
-       width: 75%;
-   }
-   .about-us-left .images-list{
-        display: flex;
-        justify-content: space-between;
-        width: 73%;
-        margin: auto;
-   }
-   .about-us-left .images-list{
-       padding-left: 0;
-   }
-   .about-us-text>div{
-        width: 100%;
-    }
-   .colored-div .images-list{
-        width: 67%;
-        display: flex;
-        justify-content: space-between;
-   }
-   .clarity, .cut{
-       margin-top: 50px;
-   }
-   .diamonds p,
-   .synthetic-and-word,
-   .report p{
-       width: 90%;
-   }
-   .synthetic-and-word{
-       padding: 30px;
-   }
-   .synthetic-and-word p {
-       font-size: 19px;
-       line-height: 30px;
-       margin-top: 10px;
-   }
-   .report{
-       margin-left: 0;
-       width: 100%;
-   }
-   .input-div {
-       width: 80%;
-   }
-   .search .list-part,
-   .footer-part .footer-list{
-       width: 70%;
-   }
-   .search .list-part ul,
-   .footer-list ul{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-bottom: 20px;
-   }
-   .search,
-   footer{
-       padding: 35px 0;
-   }
-   .contact-us-form button {
-       width: 200px;
-   }
-}
-
-/* -------mini tablet------- */
-@media(min-width:576px) and (max-width:768px){
-    .header-main{
+@media(min-width:320px) and (max-width:576px) {
+    .header-main {
+        flex-wrap: wrap;
         padding: 10px;
-        width: 100%;
+        width: 98%;
     }
-    .header-main>div{
-        width: 40%;
-    }
+
+    .header-main>div,
     .img-group>div:last-child img,
-    .img-div>img{
+    .img-div>img {
         width: 100%;
     }
-    main{
+
+    main {
         background: #acb4e8;
-        margin-top: 93px;
     }
-    #search-input{
-        width: 85%;
+
+    #search-input {
+        width: 229px;
     }
-    #logo{
-        width: 320px;
+
+    #logo {
+        width: 300px;
         margin: auto;
     }
-    .search-input-field form>div{
+
+    .search-input-field form>div {
         flex-wrap: wrap;
         width: 90%;
         margin: auto;
         align-items: center;
         justify-content: center;
     }
+
     .img-group,
     .about-us>div,
     .about-us-left,
     .colored-div,
     .search-parent,
-    .footer-part{
+    .footer-part {
         flex-wrap: wrap;
     }
-    .img-group>div{
+
+    .img-group>div {
         width: 100% !important;
     }
-    .about{
+
+    .about {
         position: static;
         padding: 10px 15px;
     }
-    .opacity-div{
+
+    .opacity-div {
         padding: 40px 0;
     }
-    .img-group .images-list{
+
+    .img-group .images-list {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 50%;
+        width: 70%;
     }
-    .images-list>li{
+
+    .images-list>li {
         margin-bottom: 10px !important;
     }
+
     .about-us-title,
     .education-info h2,
     .synthetic-and-word h2,
     .report h2,
-    .contact-us-title{
+    .contact-us-title {
         font-size: 25px;
         line-height: 30px;
     }
+
     .about-us-info {
         font-size: 17px;
         line-height: 27px;
     }
+
     .education,
     .education-info h3 {
         margin-top: 25px;
     }
-    .education-info p{
+
+    .education-info p {
         width: 90%;
         margin: 14px auto 25px;
     }
-    .dimond-img{
+
+    .dimond-img {
         margin-left: 0;
     }
+
     .colored-div>img,
     .diamonds img,
-    .contact-us-part{
+    .contact-us-part,
+    .imaged-div {
         width: 100%;
     }
+
+    .imaged-div {
+        margin: 20px 0;
+    }
+
     .clarity img,
-    .cut img{
+    .cut img {
         width: 80%;
         margin: auto;
     }
-    .about-us-left{
+
+    .about-us-left {
         padding-top: 20px;
     }
-    .about-us-left>div:first-child,
-    .contact-us-form {
-        width: 55%;
-    }
-    .about-us-left>div:first-child{
+
+    .about-us-left>div:first-child {
+        width: 73%;
         margin-left: 0;
     }
-    .about-us-left .images-list{
-         display: flex;
-         justify-content: space-between;
-         width: 75%;
-         margin: auto;
+
+    .contact-us-form {
+        width: 75%;
     }
-    .about-us-left .images-list{
+
+    .about-us-left .images-list {
+        display: flex;
+        justify-content: space-between;
+        width: 73%;
+        margin: auto;
+    }
+
+    .about-us-left .images-list {
         padding-left: 0;
     }
-    .about-us-text>div{
+
+    .about-us-text>div {
         width: 100%;
     }
-    .colored-div .images-list{
-         width: 45%;
-         display: flex;
-         justify-content: space-between;
+
+    .colored-div .images-list {
+        width: 67%;
+        display: flex;
+        justify-content: space-between;
     }
-    .clarity, .cut{
+
+    .clarity, .cut {
         margin-top: 50px;
     }
+
     .diamonds p,
     .synthetic-and-word,
-    .report p{
+    .report p {
         width: 90%;
     }
-    .synthetic-and-word{
+
+    .synthetic-and-word {
         padding: 30px;
     }
+
     .synthetic-and-word p {
         font-size: 19px;
         line-height: 30px;
         margin-top: 10px;
     }
-    .report{
+
+    .report {
+        margin-left: 0;
         width: 100%;
     }
+
     .input-div {
-        width: 50%;
+        width: 80%;
     }
+
     .search .list-part,
-    .footer-part .footer-list{
-        width: 50%;
+    .footer-part .footer-list {
+        width: 70%;
     }
+
     .search .list-part ul,
-    .footer-list ul{
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       margin-bottom: 20px;
+    .footer-list ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
     }
+
     .search,
-    footer{
+    footer {
         padding: 35px 0;
     }
+
     .contact-us-form button {
         width: 200px;
     }
-    .imaged-div{
+
+    .not-found-part {
+        margin: 150px auto 0;
+    }
+
+    .not-found-part img {
+        margin-top: 45px;
+        width: 68%;
+        max-width: 250px;
+    }
+
+    .pdf-file-part {
+        margin-top: 150px;
+    }
+
+    .pdf-part h2 {
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 50px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .pdf-full-info {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .pdf-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .pdf-info p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+/* -------mini tablet------- */
+@media(min-width:576px) and (max-width:768px) {
+    .header-main {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .header-main>div {
+        width: 40%;
+    }
+
+    .img-group>div:last-child img,
+    .img-div>img {
+        width: 100%;
+    }
+
+    main {
+        background: #acb4e8;
+        margin-top: 93px;
+    }
+
+    #search-input {
+        width: 85%;
+    }
+
+    #logo {
+        width: 320px;
+        margin: auto;
+    }
+
+    .search-input-field form>div {
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-group,
+    .about-us>div,
+    .about-us-left,
+    .colored-div,
+    .search-parent,
+    .footer-part {
+        flex-wrap: wrap;
+    }
+
+    .img-group>div {
+        width: 100% !important;
+    }
+
+    .about {
+        position: static;
+        padding: 10px 15px;
+    }
+
+    .opacity-div {
+        padding: 40px 0;
+    }
+
+    .img-group .images-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+    }
+
+    .images-list>li {
+        margin-bottom: 10px !important;
+    }
+
+    .about-us-title,
+    .education-info h2,
+    .synthetic-and-word h2,
+    .report h2,
+    .contact-us-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .about-us-info {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .education,
+    .education-info h3 {
+        margin-top: 25px;
+    }
+
+    .education-info p {
+        width: 90%;
+        margin: 14px auto 25px;
+    }
+
+    .dimond-img {
+        margin-left: 0;
+    }
+
+    .colored-div>img,
+    .diamonds img,
+    .contact-us-part {
+        width: 100%;
+    }
+
+    .clarity img,
+    .cut img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-us-left {
+        padding-top: 20px;
+    }
+
+    .about-us-left>div:first-child,
+    .contact-us-form {
+        width: 55%;
+    }
+
+    .about-us-left>div:first-child {
+        margin-left: 0;
+    }
+
+    .about-us-left .images-list {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: auto;
+    }
+
+    .about-us-left .images-list {
+        padding-left: 0;
+    }
+
+    .about-us-text>div {
+        width: 100%;
+    }
+
+    .colored-div .images-list {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .clarity, .cut {
+        margin-top: 50px;
+    }
+
+    .diamonds p,
+    .synthetic-and-word,
+    .report p {
+        width: 90%;
+    }
+
+    .synthetic-and-word {
+        padding: 30px;
+    }
+
+    .synthetic-and-word p {
+        font-size: 19px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    .report {
+        width: 100%;
+    }
+
+    .input-div {
+        width: 50%;
+    }
+
+    .search .list-part,
+    .footer-part .footer-list {
+        width: 50%;
+    }
+
+    .search .list-part ul,
+    .footer-list ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .search,
+    footer {
+        padding: 35px 0;
+    }
+
+    .contact-us-form button {
+        width: 200px;
+    }
+
+    .imaged-div {
         width: 100%;
         margin: 20px 0;
     }
 
+    .not-found-part {
+        margin: 150px auto 0;
+    }
+
+    .not-found-part img {
+        margin-top: 40px;
+        width: 48%;
+        max-width: 270px;
+    }
+
+    .not-found-part {
+        margin: 150px auto 0;
+    }
+
+    .not-found-part img {
+        margin-top: 45px;
+        width: 68%;
+        max-width: 250px;
+    }
+
+    .pdf-file-part {
+        margin-top: 150px;
+    }
+
+    .pdf-part h2 {
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 50px;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .pdf-full-info {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .pdf-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .pdf-info p {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 
 
 /* -----------tablet------- */
-@media(min-width:768px) and (max-width:992px){
-    .header-main{
+@media(min-width:768px) and (max-width:992px) {
+    .header-main {
         padding: 10px;
         width: 85%;
     }
-    .header-main>div{
+
+    .header-main>div {
         width: 40%;
     }
+
     .img-group>div:last-child img,
-    .img-div>img{
+    .img-div>img {
         width: 100%;
     }
-    main{
+
+    main {
         margin-top: 100px;
     }
-    #search-input{
+
+    #search-input {
         width: 85%;
     }
-    #logo{
+
+    #logo {
         width: 320px;
         margin: auto;
     }
-    .search-input-field form>div{
+
+    .search-input-field form>div {
         flex-wrap: wrap;
         width: 90%;
         margin: auto;
         align-items: center;
         justify-content: center;
     }
+
     .img-group,
     .about-us>div,
     .about-us-left,
     .colored-div,
     .search-parent,
-    .footer-part{
+    .footer-part {
         flex-wrap: wrap;
     }
-    .img-group>div{
+
+    .img-group>div {
         width: 100% !important;
     }
-    .about{
+
+    .about {
         position: static;
         padding: 10px 15px;
     }
-    .opacity-div{
+
+    .opacity-div {
         padding: 40px 0;
     }
-    .img-group .images-list{
+
+    .img-group .images-list {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 35%;
     }
-    .images-list>li{
+
+    .images-list>li {
         margin-bottom: 10px !important;
     }
+
     .about-us-title,
     .education-info h2,
     .synthetic-and-word h2,
     .report h2,
-    .contact-us-title{
+    .contact-us-title {
         font-size: 25px;
         line-height: 30px;
     }
+
     .about-us-info {
         font-size: 17px;
         line-height: 27px;
     }
-    .about-us-text>div{
+
+    .about-us-text>div {
         width: 100%;
     }
+
     .education,
     .education-info h3 {
         margin-top: 25px;
     }
-    .education-info p{
+
+    .education-info p {
         width: 90%;
         margin: 14px auto 25px;
     }
-    .dimond-img{
+
+    .dimond-img {
         margin-left: 0;
     }
+
     .colored-div>img,
     .diamonds img,
-    .contact-us-part{
+    .contact-us-part {
         width: 100%;
     }
+
     .clarity img,
-    .cut img{
+    .cut img {
         width: 80%;
         margin: auto;
     }
-    .about-us-left{
+
+    .about-us-left {
         padding-top: 20px;
     }
-    .about-us-left>div:first-child{
+
+    .about-us-left>div:first-child {
         width: 42%;
         margin-left: 0;
     }
+
     .contact-us-form {
         width: 43%;
     }
-    .about-us-left .images-list{
-         display: flex;
-         justify-content: space-between;
-         width: 66%;
-         margin: auto;
+
+    .about-us-left .images-list {
+        display: flex;
+        justify-content: space-between;
+        width: 66%;
+        margin: auto;
     }
-    .about-us-left .images-list{
+
+    .about-us-left .images-list {
         padding-left: 0;
     }
 
-    .colored-div .images-list{
-         width: 35%;
-         display: flex;
-         justify-content: space-between;
+    .colored-div .images-list {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
     }
-    .clarity, .cut{
+
+    .clarity, .cut {
         margin-top: 50px;
     }
+
     .diamonds p,
     .synthetic-and-word,
-    .report p{
+    .report p {
         width: 90%;
     }
-    .synthetic-and-word{
+
+    .synthetic-and-word {
         padding: 30px;
     }
+
     .synthetic-and-word p {
         font-size: 19px;
         line-height: 30px;
         margin-top: 10px;
     }
-    .report{
+
+    .report {
         margin-left: 0;
         width: 100%;
     }
+
     .input-div {
         width: 40%;
     }
+
     .search .list-part,
-    .footer-part .footer-list{
+    .footer-part .footer-list {
         width: 35%;
     }
+
     .search .list-part ul,
-    .footer-list ul{
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       margin-bottom: 20px;
+    .footer-list ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
     }
+
     .search,
-    footer{
+    footer {
         padding: 35px 0;
     }
+
     .contact-us-form button {
         width: 200px;
     }
-    .imaged-div{
+
+    .imaged-div {
         width: 100%;
         margin: 20px 0;
+    }
+
+    .not-found-part {
+        width: 83%;
+        margin: 150px auto 0;
+    }
+
+    .not-found-part img {
+        margin-top: 40px;
+        width: 48%;
+        max-width: 270px;
+    }
+
+    .pdf-file-part {
+        margin-top: 150px;
+    }
+
+    .pdf-part h2 {
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 50px;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .pdf-full-info {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .pdf-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .pdf-info p {
+        font-size: 16px;
+        line-height: 26px;
     }
 }
 
 
 /* ---------laptop------- */
-@media(min-width:992px) and (max-width:1200px){
-    .header-main{
+@media(min-width:992px) and (max-width:1200px) {
+    .header-main {
         padding: 10px;
         width: 85%;
     }
-    .header-main>div{
+
+    .header-main>div {
         width: 40%;
     }
+
     .img-group>div:last-child img,
-    .img-div>img{
+    .img-div>img {
         width: 100%;
     }
-    main{
+
+    main {
         margin-top: 100px;
     }
-    #search-input{
+
+    #search-input {
         width: 85%;
     }
-    #logo{
+
+    #logo {
         width: 320px;
         margin: auto;
     }
-    .search-input-field form>div{
+
+    .search-input-field form>div {
         flex-wrap: wrap;
         width: 90%;
         margin: auto;
         align-items: center;
         justify-content: center;
     }
-    .about{
+
+    .about {
         padding: 10px 15px;
         right: -160px;
     }
-    .about-us>div{
+
+    .about-us>div {
         padding: 50px 0;
     }
-    .opacity-div{
+
+    .opacity-div {
         padding: 40px 0;
     }
-    .img-group .images-list{
+
+    .img-group .images-list {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 35%;
         flex-direction: column;
     }
-    .images-list>li{
+
+    .images-list>li {
         margin-bottom: 10px !important;
     }
+
     .about-us-title,
     .education-info h2,
     .synthetic-and-word h2,
     .report h2,
-    .contact-us-title{
+    .contact-us-title {
         font-size: 25px;
         line-height: 30px;
     }
+
     .about-us-info {
         font-size: 17px;
         line-height: 27px;
     }
+
     .education,
     .education-info h3 {
         margin-top: 25px;
     }
-    .education-info p{
+
+    .education-info p {
         width: 90%;
         margin: 14px auto 25px;
     }
-    .dimond-img{
+
+    .dimond-img {
         margin-left: 0;
     }
+
     .colored-div>img,
-    .diamonds img{
+    .diamonds img {
         width: 90%;
     }
-    .contact-us-part{
+
+    .contact-us-part {
         width: 75%;
     }
+
     .clarity img,
-    .cut img{
+    .cut img {
         width: 71%;
         margin: auto;
     }
-    .about-us-left{
+
+    .about-us-left {
         padding-top: 20px;
     }
+
     .about-us-left>div:first-child {
         width: 3%;
     }
-    .contact-us-form{
+
+    .contact-us-form {
         width: 47%;
     }
-    .about-us-left .images-list{
-         display: flex;
-         justify-content: space-between;
-         width: 62%;
-         margin: auto;
-         flex-direction: column;
+
+    .about-us-left .images-list {
+        display: flex;
+        justify-content: space-between;
+        width: 62%;
+        margin: auto;
+        flex-direction: column;
     }
-    .about-us-left .images-list{
+
+    .about-us-left .images-list {
         padding-left: 0;
     }
 
-    .colored-div .images-list{
-         width: 12%;
-         display: flex;
-         justify-content: space-between;
-         flex-direction: column;
-         height: 100px;
+    .colored-div .images-list {
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100px;
     }
-    .clarity, .cut{
+
+    .clarity, .cut {
         margin-top: 50px;
     }
+
     .diamonds p,
     .synthetic-and-word,
-    .report p{
+    .report p {
         width: 60%;
     }
-    .synthetic-and-word{
+
+    .synthetic-and-word {
         padding: 30px;
     }
+
     .synthetic-and-word p {
         font-size: 19px;
         line-height: 30px;
         margin-top: 10px;
     }
-    .report{
+
+    .report {
         margin-left: 0;
     }
+
     .input-div {
         width: 40%;
     }
+
     .search .list-part,
-    .footer-part .footer-list{
+    .footer-part .footer-list {
         width: 12%;
     }
+
     .search .list-part ul,
-    .footer-list ul{
-       display: flex;
-       justify-content: space-around;
-       margin-bottom: 20px;
-       flex-direction: column;
+    .footer-list ul {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        flex-direction: column;
     }
+
     .search,
-    footer{
+    footer {
         padding: 35px 0;
     }
+
     .contact-us-form button {
         width: 200px;
+    }
+
+    .not-found-part {
+        margin: 170px auto 0;
+    }
+
+    .pdf-file-part {
+        margin-top: 150px;
+    }
+
+    .pdf-part h2 {
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 50px;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .pdf-full-info {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .pdf-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .pdf-info p {
+        font-size: 16px;
+        line-height: 26px;
     }
 }
 
 
-@media(min-width:1200px) and (max-width:1600px){
-    .header-main{
+@media(min-width:1200px) and (max-width:1600px) {
+    .header-main {
         padding: 10px;
         width: 85%;
     }
-    .header-main>div{
+
+    .header-main>div {
         width: 40%;
     }
-    .img-group>div:last-child img{
+
+    .img-group>div:last-child img {
         width: 80%;
     }
 
-    .img-div>img{
+    .img-div>img {
         width: 100%;
     }
-    main{
+
+    main {
         margin-top: 145px;
     }
-    #search-input{
+
+    #search-input {
         width: 85%;
     }
-    #logo{
+
+    #logo {
         width: 500px;
         margin: auto;
     }
-    .search-input-field form>div{
+
+    .search-input-field form>div {
         flex-wrap: wrap;
         width: 90%;
         margin: auto;
         align-items: center;
         justify-content: center;
     }
-    .about{
+
+    .about {
         padding: 10px 15px;
         right: -160px;
     }
 
-    .opacity-div{
+    .opacity-div {
         padding: 40px 0;
     }
-    .img-group .images-list{
+
+    .img-group .images-list {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 35%;
         flex-direction: column;
     }
-    .images-list>li{
+
+    .images-list>li {
         margin-bottom: 10px !important;
     }
+
     .about-us-title,
     .education-info h2,
     .synthetic-and-word h2,
     .report h2,
-    .contact-us-title{
+    .contact-us-title {
         font-size: 25px;
         line-height: 30px;
     }
+
     .about-us-info {
         font-size: 17px;
         line-height: 27px;
     }
+
     .education,
     .education-info h3 {
         margin-top: 25px;
     }
-    .education-info p{
+
+    .education-info p {
         width: 90%;
         margin: 14px auto 25px;
     }
-    .dimond-img{
+
+    .dimond-img {
         margin-left: 0;
     }
-    .colored-div>img{
+
+    .colored-div>img {
         width: 90%;
     }
-    .diamonds img{
+
+    .diamonds img {
         width: 70%;
     }
-    .contact-us-part{
+
+    .contact-us-part {
         width: 76%;
     }
+
     .clarity img,
-    .cut img{
+    .cut img {
         width: 71%;
         margin: auto;
     }
-    .about-us-left{
+
+    .about-us-left {
         padding-top: 20px;
     }
+
     .about-us-left>div:first-child {
         width: 15%;
     }
-    .contact-us-form{
+
+    .contact-us-form {
         width: 31%;
     }
-    .about-us-left .images-list{
-         display: flex;
-         justify-content: space-between;
-         width: 68%;
-         margin: auto;
-         flex-direction: column;
+
+    .about-us-left .images-list {
+        display: flex;
+        justify-content: space-between;
+        width: 68%;
+        margin: auto;
+        flex-direction: column;
     }
-    .about-us-left .images-list{
+
+    .about-us-left .images-list {
         padding-left: 0;
     }
 
-    .colored-div .images-list{
-         width: 12%;
-         display: flex;
-         justify-content: space-between;
-         flex-direction: column;
-         height: 100px;
+    .colored-div .images-list {
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100px;
     }
-    .clarity, .cut{
+
+    .clarity, .cut {
         margin-top: 50px;
     }
+
     .diamonds p,
     .synthetic-and-word,
-    .report p{
+    .report p {
         width: 45%;
     }
-    .synthetic-and-word{
+
+    .synthetic-and-word {
         padding: 30px;
     }
+
     .synthetic-and-word p {
         font-size: 19px;
         line-height: 30px;
         margin-top: 10px;
     }
-    .report{
+
+    .report {
         margin-left: 0;
     }
+
     .input-div {
         width: 35%;
     }
+
     .search .list-part,
-    .footer-part .footer-list{
+    .footer-part .footer-list {
         width: 12%;
     }
+
     .search .list-part ul,
-    .footer-list ul{
-       display: flex;
-       justify-content: space-around;
-       margin-bottom: 20px;
-       flex-direction: column;
+    .footer-list ul {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        flex-direction: column;
     }
+
     .search,
-    footer{
+    footer {
         padding: 35px 0;
     }
+
     .contact-us-form button {
         width: 200px;
+    }
+
+    .pdf-file-part {
+        margin-top: 150px;
+    }
+
+    .pdf-part h2 {
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 50px;
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .pdf-full-info {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .pdf-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .pdf-info p {
+        font-size: 16px;
+        line-height: 26px;
     }
 }
