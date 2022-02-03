@@ -16,4 +16,8 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', [BaseController::class, 'index'])->name('root');
-Route::get('dashboard', [AdminController::class, 'index']);
+Route::get('find', [BaseController::class, 'search'])->name('find');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('dashboard', [AdminController::class, 'index']);
+});

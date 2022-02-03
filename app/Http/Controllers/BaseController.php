@@ -10,4 +10,9 @@ class BaseController extends Controller
     {
         return view('index');
     }
+
+    public function search()
+    {
+        return view('search');
+    }
 }

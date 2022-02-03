@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-    <!-- ------header start -->
-    <header>
-        <div class="header-main">
-            <div>
-                <img src="./images/IGDL.png" alt="IGDL" id="logo">
-            </div>
-            <div class="search-input-field">
-                <form action="">
-                    <div>
-                        <input type="search" id="search-input">
-                        <img src="./images/MagnifyingGlass.png" alt="MagnifyingGlass">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </header>
-    <!-- ----end header---------- -->
-
+@section('content')
     <!------------- start pdf file ----------------->
     <section class="pdf-file-part">
         <div class="pdf-part">
@@ -64,15 +37,12 @@
                     </p>
                 </div>
                 <div class="functional-icon">
-                    <img src="./images/share.png" alt="share">
-                    <img src="./images/download.png" alt="download">
-                    <img src="./images/print.png" alt="print">
+                    <img src="{{ asset('storage/images/share.png') }}" alt="share">
+                    <img src="{{ asset('storage/images/download.png') }}" alt="download">
+                    <img src="{{ asset('storage/images/print.png') }}" alt="print">
                 </div>
             </div>
         </div>
     </section>
     <!------------- end pdf file ----------------->
-
-</body>
-
-</html>
+@endsection
