@@ -78,11 +78,11 @@
 
 											<!--begin::Menu item-->
 											<div class="menu-item px-5 my-1">
-												<a href="{{-- route('edit-admin') --}}" class="menu-link px-5">Account Settings</a>
+												<a href="{{ route('edit') }}" class="menu-link px-5">Account Settings</a>
 											</div>
 
                                             <div class="menu-item px-5 my-1">
-												<a href="{{-- route('password-update') --}}" class="menu-link px-5 my-1">Security</a>
+												<a href="{{ route('password-update') }}" class="menu-link px-5 my-1">Security</a>
 											</div>
 
                                             <!--begin::Menu separator-->

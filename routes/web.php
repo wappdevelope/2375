@@ -20,4 +20,6 @@ Route::get('find', [BaseController::class, 'search'])->name('find');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('dashboard', [AdminController::class, 'index']);
+    Route::get('edit', [AdminController::class, 'edit'])->name('edit');
+    Route::get('password-update', [AdminController::class, 'updatePassword'])->name('password-update');
 });
