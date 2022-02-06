@@ -26,10 +26,11 @@
                     @if ($errors->any())
                         <div>
                             @foreach ($errors->all() as $error)
-                                <li class="text-danger d-flex justify-content-end">{{ $error }}</li>
+                                <li class="text-danger d-flex">{{ $error }}</li>
                             @endforeach
                         </div>
                     @endif
+
                     <div class="d-flex justify-content-between mt-2">
                         <button type="submit" class="btn btn-primary">Change</button>
                     </div>
