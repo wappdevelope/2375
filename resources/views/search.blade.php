@@ -14,7 +14,7 @@
                     <embed src="{{ $file }}" type="application/pdf" width="100%" height="600px">
                 </div>
                 <div class="functional-icon">
-                    <a href="https://telegram.me/share/url?url=https://localhost/2375/public/{{ $file }}" style="text-decoration: none;">
+                    <a href="https://telegram.me/share/url?url=https://localhost/2375/public/{{ $file }}" target="_blank" style="text-decoration: none;">
                         <img src="{{ asset('storage/images/share.png') }}" alt="share">
                     </a>
                     <a href="{{ $file }}" style="text-decoration: none;">
