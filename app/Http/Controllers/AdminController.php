@@ -5,12 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\File;
 
 class AdminController extends Controller
 {
     public function index()
     {
-        return view('admin.index');
+        $files = File::get();
+
+        return view('admin.index', [
+            'files' => $files,
+        ]);
     }
 
     public function edit()
