@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,8 @@ use App\Http\Controllers\UploadController;
 */
 
 Route::get('/', [BaseController::class, 'index'])->name('root');
-Route::get('find', [BaseController::class, 'search'])->name('find');
+Route::post('find', [SearchController::class, 'search'])->name('search');
+Route::get('404/{data}', [BaseController::class, 'r404'])->name('r404');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('home', [AdminController::class, 'index']);

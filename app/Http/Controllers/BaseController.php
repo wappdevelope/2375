@@ -11,8 +11,10 @@ class BaseController extends Controller
         return view('index');
     }
 
-    public function search()
+    public function r404($data)
     {
-        return view('search');
+        return view('404', [
+            'data' => $data,
+        ]);
     }
 }

@@ -6,40 +6,23 @@
         <div class="pdf-part">
             <h2>
                 Search result for
-                <span> “Lorem ipsum”</span>
+                <span> “{{ $name }}”</span>
             </h2>
             <div class="pdf-full-info">
                 <div class="pdf-info">
-                    <h3>Lorem ipsum</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin cras ac praesent auctor
-                        lacinia iaculis aliquet. Leo et congue commodo, semper augue id dictumst eu diam. Neque auctor
-                        gravida tortor amet mattis gravida. Dolor, in semper aliquet arcu nam et amet. Blandit pulvinar
-                        fusce nunc, nunc, tempus dapibus nisi consectetur. Augue etiam ante diam nisi et. Viverra
-                        consequat nibh lorem sed a gravida sagittis, eget dictumst. Rhoncus id sit amet, odio non
-                        adipiscing tortor. Urna, felis quisque auctor mi sed neque.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin cras ac praesent auctor
-                        lacinia iaculis aliquet. Leo et congue commodo, semper augue id dictumst eu diam. Neque auctor
-                        gravida tortor amet mattis gravida. Dolor, in semper aliquet arcu nam et amet. Blandit pulvinar
-                        fusce nunc, nunc, tempus dapibus nisi consectetur. Augue etiam ante diam nisi et. Viverra
-                        consequat nibh lorem sed a gravida sagittis, eget dictumst. Rhoncus id sit amet, odio non
-                        adipiscing tortor. Urna, felis quisque auctor mi sed neque.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin cras ac praesent auctor
-                        lacinia iaculis aliquet. Leo et congue commodo, semper augue id dictumst eu diam. Neque auctor
-                        gravida tortor amet mattis gravida. Dolor, in semper aliquet arcu nam et amet. Blandit pulvinar
-                        fusce nunc, nunc, tempus dapibus nisi consectetur. Augue etiam ante diam nisi et. Viverra
-                        consequat nibh lorem sed a gravida sagittis, eget dictumst. Rhoncus id sit amet, odio non
-                        adipiscing tortor. Urna, felis quisque auctor mi sed neque.
-                    </p>
+                    <h3>{{ $name }}</h3>
+                    <embed src="{{ $file }}" type="application/pdf" width="100%" height="600px">
                 </div>
                 <div class="functional-icon">
-                    <img src="{{ asset('storage/images/share.png') }}" alt="share">
-                    <img src="{{ asset('storage/images/download.png') }}" alt="download">
-                    <img src="{{ asset('storage/images/print.png') }}" alt="print">
+                    <a href="https://telegram.me/share/url?url=https://localhost/2375/public/{{ $file }}" style="text-decoration: none;">
+                        <img src="{{ asset('storage/images/share.png') }}" alt="share">
+                    </a>
+                    <a href="{{ $file }}" style="text-decoration: none;">
+                        <img src="{{ asset('storage/images/download.png') }}" alt="download">
+                    </a>
+                    <a href="javascript: window.print()" style="text-decoration: none;">
+                        <img src="{{ asset('storage/images/print.png') }}" alt="print">
+                    </a>
                 </div>
             </div>
         </div>

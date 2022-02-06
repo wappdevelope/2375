@@ -1727,4 +1727,8 @@ footer {
         font-size: 16px;
         line-height: 26px;
     }
+
+    .file {
+        width: 100%;
+    }
 }

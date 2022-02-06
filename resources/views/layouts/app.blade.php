@@ -19,9 +19,11 @@
                     <img src="{{ asset('storage/images/IGDL.png') }}" alt="IGDL" id="logo">
                 </div>
                 <div class="search-input-field">
-                    <form action="">
+                    <form action="{{ route('search') }}" method="POST">
+                        @csrf
+
                         <div>
-                            <input type="search" id="search-input">
+                            <input type="search" name="search" id="search-input">
                             <img src="{{ asset('storage/images/MagnifyingGlass.png') }}" alt="MagnifyingGlass">
                         </div>
                     </form>
