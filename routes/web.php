@@ -6,6 +6,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\SearchController;
 
+use Illuminate\Support\Facades\Artisan;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,4 +30,12 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('file-upload', [UploadController::class, 'upload'])->name('upload');
     Route::post('file-del/{id}', [UploadController::class, 'del'])->name('del');
+});
+
+Route::get('migrate', function () {
+    Artisan::call('migrate');
+});
+
+Route::get('cache', function () {
+    Artisan::call('optimize:clear');
 });

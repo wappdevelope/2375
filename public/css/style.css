@@ -553,12 +553,50 @@ footer {
 .functional-icon {
     text-align: right;
     margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .functional-icon img:not(:last-child) {
     margin-right: 30px;
 }
-
+.share-part{
+    position: relative;
+    transition: 0.3s;
+}
+.shared-link{
+    position: absolute;
+    top: -72px;
+    left: -53px;
+    padding: 10px;
+    background: #000732;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.shared-link ul,
+.shared-link a
+{
+    display: flex;
+    
+}
+.shared-link ul>li{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.shared-link ul>li:not(:last-child){
+    margin-right: 10px;
+}
+.shared-link img{
+    object-fit: cover;
+}
+.share-part:hover .shared-link{
+    visibility: visible;
+}
 /* ------------- end pdf file ----------------- */
 
 
@@ -800,6 +838,13 @@ footer {
     .pdf-info p {
         font-size: 16px;
         line-height: 26px;
+    }
+    .shared-link{
+        padding: 6px;
+        left: -55px;
+    }
+    .shared-link ul>li {
+        padding: 7px;
     }
 }
 
@@ -1049,6 +1094,14 @@ footer {
         font-size: 16px;
         line-height: 26px;
     }
+
+    .shared-link{
+        padding: 6px;
+        left: -55px;
+    }
+    .shared-link ul>li {
+        padding: 7px;
+    }
 }
 
 
@@ -1290,6 +1343,13 @@ footer {
         font-size: 16px;
         line-height: 26px;
     }
+    .shared-link{
+        padding: 6px;
+        left: -55px;
+    }
+    .shared-link ul>li {
+        padding: 7px;
+    }
 }
 
 
@@ -1510,6 +1570,13 @@ footer {
         font-size: 16px;
         line-height: 26px;
     }
+    .shared-link{
+        padding: 6px;
+        left: -55px;
+    }
+    .shared-link ul>li {
+        padding: 7px;
+    }
 }
 
 
@@ -1727,8 +1794,11 @@ footer {
         font-size: 16px;
         line-height: 26px;
     }
-
-    .file {
-        width: 100%;
+    .shared-link{
+        padding: 6px;
+        left: -55px;
+    }
+    .shared-link ul>li {
+        padding: 7px;
     }
 }
