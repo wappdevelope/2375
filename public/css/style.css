@@ -82,7 +82,7 @@ header {
 
 /* -----international part start----- */
 main {
-    background: url(../images/AdobeStock_344993732.png) no-repeat center/cover;
+    background: url(../storage/images/AdobeStock_344993732.png) no-repeat center/cover;
     margin-top: 125px;
 }
 
@@ -288,7 +288,7 @@ main {
 /*--- start synthetic part---- */
 
 .synthetic {
-    background: url(../images/AdobeStock_331123572.png) no-repeat center/cover;
+    background: url(../storage/images/AdobeStock_331123572.png) no-repeat center/cover;
     color: white;
     text-align: center;
 }
@@ -579,7 +579,7 @@ footer {
 .shared-link a
 {
     display: flex;
-    
+
 }
 .shared-link ul>li{
     background-color: white;

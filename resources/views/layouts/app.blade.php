@@ -16,7 +16,9 @@
         <header>
             <div class="header-main">
                 <div>
-                    <img src="{{ asset('storage/images/IGDL.png') }}" alt="IGDL" id="logo">
+                    <a href="{{ route('root') }}">
+                        <img src="{{ asset('storage/images/IGDL.png') }}" alt="IGDL" id="logo">
+                    </a>
                 </div>
                 <div class="search-input-field">
                     <form action="{{ route('search') }}" method="POST">
