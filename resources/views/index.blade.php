@@ -2,35 +2,39 @@
 
 @section('content')
     <!-- ---international part start -->
+    <section class="fixed-part ">
+        <div class="page-icons-part">
+            <ul class="images-list" id="mainNav">
+                <li class="active">
+                    <a href="#about-us" onclick="switchPanel(0)">
+                        <img src="{{ asset('storage/images/test.svg') }}" alt="info">
+                    </a>
+                </li>
+                <li>
+                    <a href="#education" onclick="switchPanel(1)">
+                        <img src="{{ asset('storage/images/Group3.png') }}" alt="hat">
+                    </a>
+                </li>
+                <li>
+                    <a href="#search" onclick="switchPanel(2)">
+                        <img src="{{ asset('storage/images/Group5.png') }}" alt="search">
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact-us" onclick="switchPanel(3)">
+                        <img src="{{ asset('storage/images/Group2.png') }}" alt="message">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ---international part start -->
     <main>
         <div class="opacity-div">
             <div class="img-group">
                 <div>
-                    <ul class="images-list">
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/Group 4.png') }}" alt="info">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/Group 3.png') }}" alt="hat">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/Group 5.png') }}" alt="search">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/Group 2.png') }}" alt="message">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="{{ asset('storage/images/igdlbig.png') }}" alt="igdl-blue">
+                    <h1 class="international-title">International Gemmological and diamond laboratories</h1>
                 </div>
             </div>
         </div>
@@ -38,10 +42,10 @@
     <!-- international part end -->
 
     <!-- ----start about us -->
-    <section class="about-us">
+    <section class="about-us panel" id="about-us">
         <div class="about-us-text">
             <div class="about-us-left">
-                <div>
+                {{-- <div>
                     <ul class="images-list">
                         <li>
                             <a href="#">
@@ -65,7 +69,7 @@
                         </li>
                     </ul>
 
-                </div>
+                </div> --}}
                 <div class="about">
                     <h2 class="about-us-title">About us </h2>
                     <p class="about-us-info">
@@ -89,7 +93,7 @@
 
     <!-- ----start education part---- -->
 
-    <section class="education">
+    <section class="education panel" id="education">
         <div>
             <div>
                 <div class="education-info">
@@ -126,15 +130,15 @@
                     </ul>
 
                     <div class="imaged-div">
-                        <img src="{{ asset('storage/images/image 1.png') }}" alt="diamond-type" class="dimond-img">
+                        <img src="{{ asset('storage/images/image1.png') }}" alt="diamond-type" class="dimond-img">
                         <div class="clarity">
                             <h3>CLARITY GRADING CHART</h3>
-                            <img src="{{ asset('storage/images/image 2.png') }}" alt="clarity">
+                            <img src="{{ asset('storage/images/image2.png') }}" alt="clarity">
                         </div>
 
                         <div class="cut">
                             <h3>CUT</h3>
-                            <img src="{{ asset('storage/images/image 3.png') }}" alt="cut-img">
+                            <img src="{{ asset('storage/images/image3.png') }}" alt="cut-img">
                         </div>
                     </div>
 
@@ -153,7 +157,7 @@
             <h3>DIAMONDS</h3>
             <p>At IGDL, our team undertake the grading and certification of diamonds of all shapes, colours
                 and sizes. Please enquire if you would like us to certificate your diamonds.</p>
-            <img src="{{ asset('storage/images/diamonddss 1.png') }}" alt="diamonddss">
+                <img src="{{ asset('storage/images/diamonddss1.png') }}" alt="diamonddss">
         </div>
     </section>
     <!-- end diamond part -->
@@ -176,7 +180,7 @@
 
     <!----- start search part------ -->
 
-    <section class="search">
+    <section class="search panel" id="search">
         <div class="search-parent">
             <div class="list-part">
                 <ul class="images-list">
@@ -217,7 +221,7 @@
 
 
     <!-- -----start footer part ------->
-    <footer>
+    <footer id="contact-us" class="panel">
         <div class="footer-part">
             <div class="footer-list">
                 <ul class="images-list">

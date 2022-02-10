@@ -10,7 +10,10 @@
     font-family: Nunito;
     src: url(../font/Nunito-VariableFont_wght.ttf);
 }
-
+@font-face {
+    font-family: Basker;
+    src: url(../font/Baskervville-Regular.otf);
+}
 body::-webkit-scrollbar {
     width: 0.5em;
 }
@@ -51,12 +54,15 @@ header {
 .header-main>div:first-child {
     display: flex;
 }
-
+#logo{
+    cursor: pointer;
+}
 #search-input {
     background: transparent;
     border: none;
     border-bottom: 1px solid #C4C4C4;
     width: 61%;
+    padding: 10px 0;
 }
 
 .search-input-field,
@@ -85,6 +91,26 @@ main {
     background: url(../storage/images/AdobeStock_344993732.png) no-repeat center/cover;
     margin-top: 125px;
 }
+ #mainNav a.highlight {
+    background: #1d47bb;
+}
+#mainNav a{
+   display: flex;
+   border-radius: 50%;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   align-items: center;
+}
+.international-title{
+    font-size: 64px;
+    line-height: 108px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Basker;
+    font-style: normal;
+    font-weight: normal;
+}
 
 .opacity-div {
     width: 100%;
@@ -98,24 +124,33 @@ main {
     width: 88%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.img-group>div:first-child {
-    width: 12%;
+.page-icons-part {
+    background: rgba(59, 93, 103, 0.47);
+    border-radius: 46px;
+    position: fixed;
+    top: 255px;
+    left: 30px;
+    z-index: 10000;
 }
-
+.page-icons-part.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+.images-list{
+    padding: 20px 10px;
+}
 .img-group>div:last-child {
-    width: 70%;
+    width: 64%;
 }
 
 /* ----international part end--- */
 
 
 /* ----start about us----- */
-.about-us-left>div:first-child {
-    margin-left: 12%;
-}
+
 
 .images-list>li:not(:last-child) {
     margin-bottom: 24px;
@@ -156,6 +191,7 @@ main {
     line-height: 49px;
     text-transform: uppercase;
     color: #FFFFFF;
+    animation:backInUp 1.5s linear;
 }
 
 .about-us-info {
@@ -163,6 +199,7 @@ main {
     font-size: 22px;
     line-height: 41px;
     color: #FFFFFF;
+    animation:bounceInLeft 1.5s linear 1s;
 }
 
 .about-us-left {
@@ -245,16 +282,22 @@ main {
 .imaged-div {
     text-align: center;
     width: 80%;
+    overflow: hidden;
+    margin: auto;
 }
 
 .imaged-div img {
-    width: 80%;
+    width: 80% !important;
+    transition: 0.5s;
 }
-
+.imaged-div img:hover{
+    transform: scale(1.1);
+}
 .dimond-img {
     width: 80%;
     margin: auto;
 }
+
 
 /*------- end education part---- */
 
@@ -265,15 +308,19 @@ main {
     background: #27292B;
     text-align: center;
     color: white;
-    padding: 71px 0;
+    padding: 31px 0 0;
 }
-
+.diamonds>div>img{
+    transition: 0.5s;
+}
+.diamonds>div>img:hover{
+    transform: scale(1.1);
+}
 .diamonds h3 {
     font-size: 24px;
     line-height: 33px;
     margin-bottom: 31px;
 }
-
 .diamonds p {
     line-height: 38px;
     font-weight: normal;
@@ -291,6 +338,7 @@ main {
     background: url(../storage/images/AdobeStock_331123572.png) no-repeat center/cover;
     color: white;
     text-align: center;
+    background-attachment: fixed;
 }
 
 .synthetic-and-word {
@@ -323,6 +371,7 @@ main {
 .search {
     background: #27292B;
     padding: 78px 0;
+    margin-bottom: 40px;
 }
 
 .search-parent,
@@ -341,6 +390,7 @@ main {
     text-align: center;
     color: white;
     width: 75%;
+    margin: auto;
 }
 
 .report h2 {
@@ -400,7 +450,7 @@ main {
 
 /* -----start footer part------ */
 footer {
-    padding: 65px 0;
+    padding: 71px 0;
 }
 
 .footer-part .footer-list {
@@ -410,6 +460,7 @@ footer {
 .contact-us-part {
     width: 75%;
     text-align: center;
+    margin: auto;
 }
 
 .contact-us-form {
@@ -467,8 +518,11 @@ footer {
     font-size: 20px;
     line-height: 27px;
     cursor: pointer;
+    transition: 0.5s;
 }
-
+.contact-us-form button:hover{
+    background: #000732;
+}
 
 /* ------end footer part------*/
 
@@ -639,7 +693,10 @@ footer {
         align-items: center;
         justify-content: center;
     }
-
+    .international-title{
+        font-size: 33px;
+        line-height: 63px;
+    }
     .img-group,
     .about-us>div,
     .about-us-left,
@@ -651,6 +708,7 @@ footer {
 
     .img-group>div {
         width: 100% !important;
+        padding-top: 50px;
     }
 
     .about {
@@ -670,9 +728,18 @@ footer {
     }
 
     .images-list>li {
-        margin-bottom: 10px !important;
+        margin-bottom: 0px !important;
     }
-
+    .page-icons-part{
+        top: 150px;
+        width: 65%;
+        max-width: 250px;
+    }
+    .images-list{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
     .about-us-title,
     .education-info h2,
     .synthetic-and-word h2,
@@ -700,6 +767,12 @@ footer {
     .dimond-img {
         margin-left: 0;
     }
+    .imaged-div img{
+        width: 100%;
+    }
+    .diamonds p{
+        margin: auto;
+    }
 
     .colored-div>img,
     .diamonds img,
@@ -710,6 +783,9 @@ footer {
 
     .imaged-div {
         margin: 20px 0;
+    }
+    .diamonds>div>img:hover {
+        transform: scale(1);
     }
 
     .clarity img,
@@ -722,13 +798,13 @@ footer {
         padding-top: 20px;
     }
 
-    .about-us-left>div:first-child {
-        width: 73%;
+    .about-us-left .about {
+        width: 100%;
         margin-left: 0;
     }
 
     .contact-us-form {
-        width: 75%;
+        width: 85%;
     }
 
     .about-us-left .images-list {
@@ -897,8 +973,22 @@ footer {
 
     .img-group>div {
         width: 100% !important;
+        padding-top: 50px;
     }
-
+    .page-icons-part {
+        top: 125px;
+        width: 45%;
+        max-width: 270px;
+    }
+    .international-title {
+        font-size: 49px;
+        line-height: 79px;
+    }
+    .images-list{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
     .about {
         position: static;
         padding: 10px 15px;
@@ -916,7 +1006,7 @@ footer {
     }
 
     .images-list>li {
-        margin-bottom: 10px !important;
+        margin-bottom: 0px !important;
     }
 
     .about-us-title,
@@ -963,13 +1053,11 @@ footer {
         padding-top: 20px;
     }
 
-    .about-us-left>div:first-child,
     .contact-us-form {
-        width: 55%;
+        width: 65%;
     }
-
-    .about-us-left>div:first-child {
-        margin-left: 0;
+    .imaged-div img {
+        width: 100%;
     }
 
     .about-us-left .images-list {
@@ -1002,11 +1090,15 @@ footer {
     .report p {
         width: 90%;
     }
-
+    .diamonds p{
+        margin: auto;
+    }
     .synthetic-and-word {
         padding: 30px;
     }
-
+    .diamonds>div>img:hover {
+        transform: scale(1);
+    }
     .synthetic-and-word p {
         font-size: 19px;
         line-height: 30px;
@@ -1018,7 +1110,7 @@ footer {
     }
 
     .input-div {
-        width: 50%;
+        width: 60%;
     }
 
     .search .list-part,
@@ -1153,9 +1245,17 @@ footer {
     }
 
     .img-group>div {
-        width: 100% !important;
+        width: 80% !important;
+        max-width: 632px;
     }
 
+    .international-title {
+        font-size: 38px;
+        line-height: 65px;
+    }
+    .page-icons-part{
+        top: 125px;
+    }
     .about {
         position: static;
         padding: 10px 15px;
@@ -1207,11 +1307,18 @@ footer {
     .dimond-img {
         margin-left: 0;
     }
+    .imaged-div img {
+        width: 100%;
+    }
 
     .colored-div>img,
     .diamonds img,
     .contact-us-part {
         width: 100%;
+    }
+
+    .diamonds>div>img:hover{
+        transform: scale(1.0);
     }
 
     .clarity img,
@@ -1224,13 +1331,9 @@ footer {
         padding-top: 20px;
     }
 
-    .about-us-left>div:first-child {
-        width: 42%;
-        margin-left: 0;
-    }
 
     .contact-us-form {
-        width: 43%;
+        width: 50%;
     }
 
     .about-us-left .images-list {
@@ -1259,6 +1362,9 @@ footer {
     .report p {
         width: 90%;
     }
+    .diamonds p{
+        margin: auto;
+    }
 
     .synthetic-and-word {
         padding: 30px;
@@ -1276,7 +1382,7 @@ footer {
     }
 
     .input-div {
-        width: 40%;
+        width: 50%;
     }
 
     .search .list-part,
@@ -1296,7 +1402,9 @@ footer {
     footer {
         padding: 35px 0;
     }
-
+    .search{
+        margin-bottom: 0;
+    }
     .contact-us-form button {
         width: 200px;
     }
@@ -1414,7 +1522,17 @@ footer {
     .images-list>li {
         margin-bottom: 10px !important;
     }
-
+    .img-group>div:last-child{
+        width: 80%;
+        max-width: 712px;
+    }
+    .international-title {
+        font-size: 52px;
+        line-height: 76px;
+    }
+    .page-icons-part{
+        top: 125px;
+    }
     .about-us-title,
     .education-info h2,
     .synthetic-and-word h2,
@@ -1442,7 +1560,9 @@ footer {
     .dimond-img {
         margin-left: 0;
     }
-
+    .imaged-div img {
+        width: 100%;
+    }
     .colored-div>img,
     .diamonds img {
         width: 90%;
@@ -1462,9 +1582,7 @@ footer {
         padding-top: 20px;
     }
 
-    .about-us-left>div:first-child {
-        width: 3%;
-    }
+
 
     .contact-us-form {
         width: 47%;
@@ -1495,11 +1613,16 @@ footer {
     }
 
     .diamonds p,
-    .synthetic-and-word,
-    .report p {
+    .synthetic-and-word
+     {
         width: 60%;
     }
-
+    .report p{
+        width: 68%;
+    }
+    .diamonds p{
+        margin: auto;
+    }
     .synthetic-and-word {
         padding: 30px;
     }
@@ -1510,12 +1633,8 @@ footer {
         margin-top: 10px;
     }
 
-    .report {
-        margin-left: 0;
-    }
-
     .input-div {
-        width: 40%;
+        width: 60%;
     }
 
     .search .list-part,
@@ -1618,7 +1737,17 @@ footer {
         align-items: center;
         justify-content: center;
     }
-
+    .img-group>div:last-child {
+        width: 75%;
+        max-width: 788px;
+    }
+    .page-icons-part{
+        top: 215px;
+    }
+    .international-title {
+        font-size: 57px;
+        line-height: 99px;
+    }
     .about {
         padding: 10px 15px;
         right: -160px;
@@ -1690,12 +1819,8 @@ footer {
         padding-top: 20px;
     }
 
-    .about-us-left>div:first-child {
-        width: 15%;
-    }
-
     .contact-us-form {
-        width: 31%;
+        width: 40%;
     }
 
     .about-us-left .images-list {
@@ -1723,11 +1848,15 @@ footer {
     }
 
     .diamonds p,
-    .synthetic-and-word,
-    .report p {
+    .synthetic-and-word {
         width: 45%;
     }
-
+    .report p{
+        width: 55%;
+    }
+    .diamonds p{
+        margin: auto;
+    }
     .synthetic-and-word {
         padding: 30px;
     }
@@ -1738,12 +1867,9 @@ footer {
         margin-top: 10px;
     }
 
-    .report {
-        margin-left: 0;
-    }
 
     .input-div {
-        width: 35%;
+        width: 50%;
     }
 
     .search .list-part,
