@@ -45,31 +45,7 @@
     <section class="about-us panel" id="about-us">
         <div class="about-us-text">
             <div class="about-us-left">
-                {{-- <div>
-                    <ul class="images-list">
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/info.png') }}" alt="info">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/Group 3.png') }}" alt="hat">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/Group 5.png') }}" alt="search">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/Group 2.png') }}" alt="message">
-                            </a>
-                        </li>
-                    </ul>
 
-                </div> --}}
                 <div class="about">
                     <h2 class="about-us-title">About us </h2>
                     <p class="about-us-info">
@@ -106,28 +82,6 @@
             <div class="color-granding">
                 <h3>COLOUR GRADING </h3>
                 <div class="colored-div">
-                    <ul class="images-list">
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/info1.png') }}" alt="info">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/hat1.png') }}" alt="hat">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/search.png') }}" alt="search">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="{{ asset('storage/images/message1.png') }}" alt="message">
-                            </a>
-                        </li>
-                    </ul>
 
                     <div class="imaged-div">
                         <img src="{{ asset('storage/images/image1.png') }}" alt="diamond-type" class="dimond-img">
@@ -157,7 +111,7 @@
             <h3>DIAMONDS</h3>
             <p>At IGDL, our team undertake the grading and certification of diamonds of all shapes, colours
                 and sizes. Please enquire if you would like us to certificate your diamonds.</p>
-                <img src="{{ asset('storage/images/diamonddss1.png') }}" alt="diamonddss">
+            <img src="{{ asset('storage/images/diamonddss1.png') }}" alt="diamonddss">
         </div>
     </section>
     <!-- end diamond part -->
@@ -182,71 +136,30 @@
 
     <section class="search panel" id="search">
         <div class="search-parent">
-            <div class="list-part">
-                <ul class="images-list">
-                    <li>
-                        <a href="#">
-                            <img src="{{ asset('storage/images/info3.png') }}" alt="info">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ asset('storage/images/Group 3.png') }}" alt="hat">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ asset('storage/images/search1.png') }}" alt="search">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ asset('storage/images/Group 2.png') }}" alt="message">
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <div class="report">
                 <h2>Search for Certificate Number</h2>
                 <h3>VERIFY YOUR REPORT</h3>
-                <p>Please enter the 12 digit reference number to verify your report. This number can be found on the physical certificate, or can be given to you by your jeweller. </p>
-                <div class="input-div">
-                    <input type="text">
-                    <img src="{{ asset('storage/images/search1.png') }}" alt="search-icon">
-                </div>
+                <p>Please enter the 12 digit reference number to verify your report. This number can be found on the
+                    physical certificate, or can be given to you by your jeweller. </p>
+                <form action="{{ route('search') }}" method="POST">
+                    @csrf
+                    
+                    <div class="input-div">
+                        <input type="text" name="search">
+                        <img src="{{ asset('storage/images/search1.png') }}" alt="search-icon">
+                    </div>
+                </form>
             </div>
         </div>
     </section>
     <!-- -----end search part----- -->
 
 
+
     <!-- -----start footer part ------->
+
     <footer id="contact-us" class="panel">
         <div class="footer-part">
-            <div class="footer-list">
-                <ul class="images-list">
-                    <li>
-                        <a href="#">
-                            <img src="{{ asset('storage/images/info1.png') }}" alt="info">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ asset('storage/images/hat3.png') }}" alt="hat">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ asset('storage/images/search.png') }}" alt="search">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{ asset('storage/images/messages.png') }}" alt="message">
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <div class="contact-us-part">
                 <h3 class="contact-us-title">Contact us</h3>
                 <form action="" class="contact-us-form">

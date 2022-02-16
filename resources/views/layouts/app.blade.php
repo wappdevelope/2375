@@ -26,8 +26,7 @@
                         @csrf
 
                         <div>
-                            <input type="search" id="search-input" placeholder="VERIFY YOUR REPORT">
-                            <input type="search" name="search" id="search-input">
+                            <input type="search" id="search-input" placeholder="VERIFY YOUR REPORT" name="search" >
                             <img src="{{ asset('storage/images/MagnifyingGlass.png') }}" alt="MagnifyingGlass">
                         </div>
                     </form>
