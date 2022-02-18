@@ -93,6 +93,8 @@ main {
 }
  #mainNav a.highlight {
     background: #1d47bb;
+    width: 100%;
+    height: 100%;
 }
 #mainNav a{
    display: flex;
@@ -161,9 +163,17 @@ main {
     justify-content: space-between;
 }
 
-.about-us-text {
-    background: #1D1E20;
+/* .about-us-text  */
+#about-us{
+    /* background: #1D1E20; */
+    background-image: url(../storage/images/AdobeStock_288314477\ 1.png);
     color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 543px;
+    height: 100vh;
+    scroll-margin-top: -30px;
 }
 
 .img-div {
@@ -191,7 +201,10 @@ main {
     line-height: 49px;
     text-transform: uppercase;
     color: #FFFFFF;
-    animation:backInUp 1.5s linear;
+    /* opacity: 1; */
+    opacity: 0;
+    margin-bottom: 20px;
+    animation:opacityText 1.5s linear 1 forwards 1s;
 }
 
 .about-us-info {
@@ -199,23 +212,43 @@ main {
     font-size: 22px;
     line-height: 41px;
     color: #FFFFFF;
-    animation:bounceInLeft 1.5s linear 1s;
+    opacity: 0;
+    /* animation:fadeIn 1.5s linear 3s; */
+    animation:opacityText 1.5s linear 1 2.5s forwards;
+    width: 90%;
 }
-
-.about-us-left {
+@keyframes opacityText{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* .about-us-left {
     display: flex;
     align-items: center;
     position: relative;
     width: 50%;
+} */
+.about-us-text{
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
 }
-
-.about {
+/* .about {
     position: absolute;
     width: 90%;
     right: -262px;
     z-index: 100;
+} */
+.about {
+    width: 68%;
+    margin: auto;
 }
-
 /* -----end about us---- */
 
 
@@ -223,6 +256,7 @@ main {
 
 .education {
     margin-top: 76px;
+    scroll-margin-top: 100px;
 }
 
 .education-info {
@@ -372,6 +406,7 @@ main {
     background: #27292B;
     padding: 78px 0;
     margin-bottom: 40px;
+    scroll-margin-top: 180px;
 }
 
 .search-parent,
@@ -450,7 +485,7 @@ main {
 
 /* -----start footer part------ */
 footer {
-    padding: 71px 0;
+    padding: 71px 0 51px;
 }
 
 .footer-part .footer-list {
@@ -523,7 +558,10 @@ footer {
 .contact-us-form button:hover{
     background: #000732;
 }
-
+.copyright{
+    text-align: center;
+    margin-top: 50px;
+}
 /* ------end footer part------*/
 
 
@@ -641,6 +679,10 @@ footer {
     border-radius: 50px;
     display: flex;
     align-items: center;
+
+}
+.shared-part ul>li{
+    margin: 0 10px;
 }
 .shared-link ul>li:not(:last-child){
     margin-right: 10px;
@@ -661,6 +703,9 @@ footer {
 /* -------smartphone------- */
 
 @media(min-width:320px) and (max-width:576px) {
+    header{
+        height: 150px;
+    }
     .header-main {
         flex-wrap: wrap;
         padding: 10px;
@@ -672,10 +717,15 @@ footer {
     .img-div>img {
         width: 100%;
     }
-
-    main {
-        background: #acb4e8;
+    .header-main>div:first-child{
+        justify-content:center
     }
+    .search-input-field{
+        display: none;
+    }
+    /* main {
+        background: #acb4e8;
+    } */
 
     #search-input {
         width: 229px;
@@ -710,14 +760,17 @@ footer {
         width: 100% !important;
         padding-top: 50px;
     }
+    main{
+        background: url(../storage/images/phoneImg.png) no-repeat center/cover;
+    }
 
     .about {
         position: static;
-        padding: 10px 15px;
+        padding: 10px 15px 20px;
     }
 
     .opacity-div {
-        padding: 40px 0;
+        padding: 40px 0 !important;
     }
 
     .img-group .images-list {
@@ -731,14 +784,20 @@ footer {
         margin-bottom: 0px !important;
     }
     .page-icons-part{
-        top: 150px;
-        width: 65%;
-        max-width: 250px;
+        top: 85px;
+        width: 58%;
+        left: 21%;
+    }
+    #mainNav a{
+        width: 35px;
+    }
+    #mainNav a img{
+        width: 100%
     }
     .images-list{
         display: flex;
         justify-content: space-between;
-        padding: 10px;
+        padding: 5px 10px;
     }
     .about-us-title,
     .education-info h2,
@@ -752,11 +811,13 @@ footer {
     .about-us-info {
         font-size: 17px;
         line-height: 27px;
+        width: 100%;
     }
 
     .education,
     .education-info h3 {
         margin-top: 25px;
+        scroll-margin-top: 120px;
     }
 
     .education-info p {
@@ -839,7 +900,7 @@ footer {
     }
 
     .synthetic-and-word {
-        padding: 30px;
+        padding: 6px;
     }
 
     .synthetic-and-word p {
@@ -870,11 +931,20 @@ footer {
         margin-bottom: 20px;
     }
 
-    .search,
-    footer {
+    .search {
         padding: 35px 0;
+        scroll-margin-top: 120px;
+        margin-bottom: 0;
     }
-
+    footer{
+        scroll-margin-top: 120px;
+        padding: 41px 0 51px;
+    }
+    #about-us{
+        scroll-margin-top: 120px;
+        background-image: url(../storage/images/mobile-about-us.png);
+        height: auto;
+    }
     .contact-us-form button {
         width: 200px;
     }
@@ -941,7 +1011,7 @@ footer {
     }
 
     main {
-        background: #acb4e8;
+        background: url(../storage/images/phoneImg.png) no-repeat center/cover;
         margin-top: 93px;
     }
 
@@ -991,7 +1061,8 @@ footer {
     }
     .about {
         position: static;
-        padding: 10px 15px;
+        padding: 10px 15px 20px;
+        width: 90%;
     }
 
     .opacity-div {
@@ -1026,6 +1097,12 @@ footer {
     .education,
     .education-info h3 {
         margin-top: 25px;
+        scroll-margin-top: 220px;
+    }
+    #about-us{
+        scroll-margin-top: 190px;
+        height: auto;
+        background-image: url(../storage/images/mobile-about-us.png);
     }
 
     .education-info p {
@@ -1129,6 +1206,7 @@ footer {
     .search,
     footer {
         padding: 35px 0;
+        scroll-margin-top: 190px;
     }
 
     .contact-us-form button {
@@ -1258,7 +1336,8 @@ footer {
     }
     .about {
         position: static;
-        padding: 10px 15px;
+        padding: 10px 15px 20px;
+        width: 78%;
     }
 
     .opacity-div {
@@ -1297,6 +1376,7 @@ footer {
     .education,
     .education-info h3 {
         margin-top: 25px;
+        scroll-margin-top: 140px;
     }
 
     .education-info p {
@@ -1404,6 +1484,11 @@ footer {
     }
     .search{
         margin-bottom: 0;
+        scroll-margin-top: 100px;
+    }
+    footer{
+        /* scroll-margin-top: 120px; */
+        height:780px
     }
     .contact-us-form button {
         width: 200px;
@@ -1457,6 +1542,10 @@ footer {
     }
     .shared-link ul>li {
         padding: 7px;
+    }
+    #about-us{
+        height: auto;
+        scroll-margin-top: 100px;
     }
 }
 
@@ -1550,6 +1639,7 @@ footer {
     .education,
     .education-info h3 {
         margin-top: 25px;
+        scroll-margin-top: 120px;
     }
 
     .education-info p {
@@ -1653,8 +1743,19 @@ footer {
     .search,
     footer {
         padding: 35px 0;
+        scroll-margin-top: 100px;
     }
-
+    .search{
+        margin-bottom: 0;
+    }
+    footer{
+        height: 780px;
+        scroll-margin-top: 20px;
+    }
+     #about-us{
+        scroll-margin-top: 55px;
+        height: auto;
+     }
     .contact-us-form button {
         width: 200px;
     }
@@ -1719,6 +1820,7 @@ footer {
 
     main {
         margin-top: 145px;
+        height: 543px;
     }
 
     #search-input {
@@ -1743,6 +1845,7 @@ footer {
     }
     .page-icons-part{
         top: 215px;
+        top: 288px;
     }
     .international-title {
         font-size: 57px;
@@ -1753,9 +1856,9 @@ footer {
         right: -160px;
     }
 
-    .opacity-div {
+    /* .opacity-div {
         padding: 40px 0;
-    }
+    } */
 
     .img-group .images-list {
         display: flex;
@@ -1786,6 +1889,7 @@ footer {
     .education,
     .education-info h3 {
         margin-top: 25px;
+        scroll-margin-top: 160px;
     }
 
     .education-info p {
@@ -1888,6 +1992,17 @@ footer {
     .search,
     footer {
         padding: 35px 0;
+
+    }
+    footer{
+        height: 700px;
+    }
+    .search{
+        scroll-margin-top: 250px;
+    }
+    #about-us{
+        scroll-margin-top: 130px;
+        height:65vh
     }
 
     .contact-us-form button {
@@ -1926,5 +2041,11 @@ footer {
     }
     .shared-link ul>li {
         padding: 7px;
+    }
+}
+
+@media(min-width:1600px){
+    main{
+        height: 543px;
     }
 }

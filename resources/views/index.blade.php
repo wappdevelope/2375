@@ -41,30 +41,33 @@
     </main>
     <!-- international part end -->
 
-    <!-- ----start about us -->
-    <section class="about-us panel" id="about-us">
-        <div class="about-us-text">
-            <div class="about-us-left">
 
-                <div class="about">
-                    <h2 class="about-us-title">About us </h2>
-                    <p class="about-us-info">
-                        International Gemmological and Diamond Laboratories are leaders in independent gemstone, diamond
-                        appraisals and independent grading certification. Our expert team of qualified gemmologists
-                        ensure the authenticity of gemstones through a stringent grading process. Our aim is providing
-                        absolute quality checking, quality assurance and confidence to jewellers and customers alike.
-                        Using state of the art technology and equipment, our team of graders are able to stringently and
-                        critically grade gemstones to an internationally recognised quality standard.
-                    </p>
+
+        <!-- ----start about us -->
+        <section class="about-us panel" id="about-us">
+            <div class="about-us-text">
+                <div class="about-us-left">
+                    <!-- <div>
+                    </div> -->
+                    <div class="about">
+                        <h2 class="about-us-title">About us </h2>
+                        <p class="about-us-info">
+                            International Gemmological and Diamond Laboratories are leaders in independent gemstone, diamond
+                            appraisals and independent grading certification. Our expert team of qualified gemmologists
+                            ensure the authenticity of gemstones through a stringent grading process. Our aim is providing
+                            absolute quality checking, quality assurance and confidence to jewellers and customers alike.
+                            Using state of the art technology and equipment, our team of graders are able to stringently and
+                            critically grade gemstones to an internationally recognised quality standard.
+                        </p>
+                    </div>
                 </div>
+                <!-- <div class="img-div"> -->
+                    <!-- <img src="./images/AdobeStock_288314477 1.png" alt=""> -->
+                    <!-- <div class="opacity-div1"></div> -->
+                <!-- </div> -->
             </div>
-            <div class="img-div">
-                <img src="{{ asset('storage/images/AdobeStock_288314477 1.png') }}" alt="">
-                <div class="opacity-div1"></div>
-            </div>
-        </div>
-    </section>
-    <!-- ----end about us -->
+        </section>
+        <!-- ----end about us -->
 
 
     <!-- ----start education part---- -->
@@ -143,7 +146,7 @@
                     physical certificate, or can be given to you by your jeweller. </p>
                 <form action="{{ route('search') }}" method="POST">
                     @csrf
-                    
+
                     <div class="input-div">
                         <input type="text" name="search">
                         <img src="{{ asset('storage/images/search1.png') }}" alt="search-icon">
@@ -179,6 +182,9 @@
                 </form>
             </div>
         </div>
+        <p class="copyright">
+            &copy;2022 International Gemological And Diamond Laboratories. All rights reserved.
+       </p>
     </footer>
     <!----- end footer part ------>
 @endsection

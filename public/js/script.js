@@ -1,7 +1,6 @@
 //when click on what we do, scrolls to the right position
 var panel = document.querySelectorAll(".panel");
 var item = document.querySelectorAll("#mainNav a");
-console.log(panel[3].offsetTop)
 
 
 
@@ -44,7 +43,7 @@ window.addEventListener("scroll", function(){
 		removeHighlight(0);
 		removeHighlight(1);
 		removeHighlight(3);
-		console.log(window.scrollY,"aaaa")
+
 
 	}
 	if(window.scrollY>=panel[3].offsetTop-leadspace){
@@ -52,7 +51,7 @@ window.addEventListener("scroll", function(){
 		removeHighlight(0);
 		removeHighlight(1);
 		removeHighlight(2);
-		console.log(window.scrollY,"fgfgfg")
+
 	}
 });
 
@@ -60,4 +59,3 @@ window.addEventListener("scroll", function(){
 
 
 
-   
