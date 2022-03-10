@@ -1,6 +1,8 @@
+
 //when click on what we do, scrolls to the right position
 var panel = document.querySelectorAll(".panel");
 var item = document.querySelectorAll("#mainNav a");
+
 
 
 
@@ -21,7 +23,6 @@ function removeHighlight(i){
 }
 //lead space when scroll
 var leadspace = 300;
-console.log(panel[3].offsetTop-leadspace)
 //scroll highlight the nav item while scrolling to that position
 window.addEventListener("scroll", function(){
 	if(window.scrollY>=panel[0].offsetTop){
@@ -29,6 +30,7 @@ window.addEventListener("scroll", function(){
 		removeHighlight(1);
 		removeHighlight(2);
 		removeHighlight(3);
+		removeHighlight(4);
 
 	}
 	if(window.scrollY>panel[1].offsetTop-leadspace){
@@ -36,6 +38,7 @@ window.addEventListener("scroll", function(){
 		removeHighlight(0);
 		removeHighlight(2);
 		removeHighlight(3);
+		removeHighlight(4);
 
 	}
 	if(window.scrollY>panel[2].offsetTop-leadspace){
@@ -43,19 +46,36 @@ window.addEventListener("scroll", function(){
 		removeHighlight(0);
 		removeHighlight(1);
 		removeHighlight(3);
+		removeHighlight(4);
 
 
 	}
-	if(window.scrollY>=panel[3].offsetTop-leadspace){
+	if(window.scrollY>panel[3].offsetTop-leadspace){
 		addHighlight(3);
 		removeHighlight(0);
 		removeHighlight(1);
 		removeHighlight(2);
-
+		removeHighlight(4);
 	}
+	if(window.scrollY>=panel[4].offsetTop-leadspace){
+		addHighlight(4);
+		removeHighlight(0);
+		removeHighlight(1);
+		removeHighlight(2);
+		removeHighlight(3);
+	}
+
 });
 
 
+function hideMenu(){
+	let menuOpen = document.querySelector('#menu-toggle').checked;
+
+	if(menuOpen = true){
+	  document.querySelector('#menu-toggle').checked = false;
+	}
+}
+window.addEventListener("scroll", hideMenu);
 
 
 

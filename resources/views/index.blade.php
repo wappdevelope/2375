@@ -2,6 +2,8 @@
 
 @section('content')
     <!-- ---international part start -->
+
+
     <section class="fixed-part ">
         <div class="page-icons-part">
             <ul class="images-list" id="mainNav">
@@ -11,17 +13,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#education" onclick="switchPanel(1)">
+                    <a href="#certificate" onclick="switchPanel(1)">
+                        <img src="{{ asset('storage/images/certificate-svgrepo-com.png') }}" alt="info">
+                    </a>
+                </li>
+                <li>
+                    <a href="#education" onclick="switchPanel(2)">
                         <img src="{{ asset('storage/images/Group3.png') }}" alt="hat">
                     </a>
                 </li>
                 <li>
-                    <a href="#search" onclick="switchPanel(2)">
+                    <a href="#search" onclick="switchPanel(3)">
                         <img src="{{ asset('storage/images/Group5.png') }}" alt="search">
                     </a>
                 </li>
                 <li>
-                    <a href="#contact-us" onclick="switchPanel(3)">
+                    <a href="#contact-us" onclick="switchPanel(4)">
                         <img src="{{ asset('storage/images/Group2.png') }}" alt="message">
                     </a>
                 </li>
@@ -41,7 +48,32 @@
     </main>
     <!-- international part end -->
 
-
+    <section class="top-nav">
+        <div>
+            <img src="{{ asset('storage/images/IGDL.png') }}" alt="IGDL" id="logo">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li>
+                <a href="#about-us">About Us</a>
+            </li>
+            <li>
+                <a href="#certificate">Certificate</a>
+            </li>
+            <li>
+                <a href="#education"> Education</a>
+            </li>
+            <li>
+                <a href="#search"> Search</a>
+            </li>
+            <li>
+                <a href="#contact-us"> Contact Us</a>
+            </li>
+        </ul>
+    </section>
 
         <!-- ----start about us -->
         <section class="about-us panel" id="about-us">
@@ -69,6 +101,25 @@
         </section>
         <!-- ----end about us -->
 
+    <!-- ----start certificate part -->
+    <section class="certificate panel" id="certificate">
+        <div>
+            <div>
+                <div class="certificate-info">
+                    <h2 class="certificate-title">certificate</h2>
+                    <p class="certificate-text">Our certificates are designed in line with recognised international grading standards. Neatly presented with critical data and necessary grading results parameters, IGDL certificates are the sought after alternative laboratory choice for fine jewellers and consumers. All IGDL certificates incorporate security measures such as our hologram and full lamination to ensure robustness and authenticity. </p>
+                </div>
+            </div>
+            <div class="certificate-image">
+                <div>
+                   <img src="{{ asset('storage/images/certeficate1.png') }}" alt="certeficate1">
+                </div>
+                <div>
+                    <img src="{{ asset('storage/images/certeficate2.png') }}" alt="certeficate2">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ----start education part---- -->
 
