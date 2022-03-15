@@ -195,7 +195,7 @@
                 <h3>VERIFY YOUR REPORT</h3>
                 <p>Please enter the 12 digit reference number to verify your report. This number can be found on the
                     physical certificate, or can be given to you by your jeweller. </p>
-                <form action="{{ route('search') }}" method="POST">
+                <form action="{{ route('search') }}" method="GET">
                     @csrf
 
                     <div class="input-div">

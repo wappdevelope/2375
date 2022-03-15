@@ -22,7 +22,7 @@
                     </a>
                 </div>
                 <div class="search-input-field">
-                    <form action="{{ route('search') }}" method="POST">
+                    <form action="{{ route('search') }}" method="GET">
                         @csrf
 
                         <div>

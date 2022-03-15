@@ -21,7 +21,8 @@
                         </div>
                     @endif
                     <div class="d-flex justify-content-end mt-2">
-                        <button type="submit" class="btn btn-primary">Upload</button>
+                        {{-- <button type="button" class="btn btn-primary m-2 preview" onclick="preview(this)">Preview</button> --}}
+                        <button type="submit" class="btn btn-primary m-2">Upload</button>
                     </div>
                 </div>
             </form>
@@ -34,8 +35,9 @@
                 <!--begin::Table head-->
                 <thead>
                     <tr>
-                        <th class="p-0 w-50px"><b>File Name</b></th>
-                        <th class="p-0 w-50px"><b>Delete</b></th>
+                        <th class="p-1 w-50px"><b>File Name</b></th>
+                        <th class="p-1 w-50px"><b>Preview</b></th>
+                        <th class="p-1 w-50px"><b>Delete</b></th>
                     </tr>
                 </thead>
 
@@ -43,10 +45,13 @@
                 <tbody>
                     @foreach ($files as $file)
                         <tr>
-                            <td class="p-0 w-50px">
+                            <td class="p-1 w-50px">
                                 <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">{{ $file->name }}</a>
                             </td>
-                            <td class="p-0 w-50px">
+                            <td class="p-1 w-50px">
+                                <button class="btn btn-sm btn-primary preview" id="{{ $file->name }}" onclick="preview(this)">Preview</button>
+                            </td>
+                            <td class="p-1 w-50px">
                                 <form action="{{ route('del', $file->id) }}" method="POST">
                                     @csrf
 
@@ -68,4 +73,29 @@
             </table>
         </div>
     </section>
+
+    <script>
+        function preview(e) {
+            if (e.getAttribute('id') != null) {
+                data = {
+                    name: e.getAttribute('id'),
+                };
+
+                fetch("{{ route('preview') }}", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-Token': "{{ csrf_token() }}",
+                    },
+                    body: JSON.stringify(data),
+                }).then(function(response) {
+                    return response.json();
+                }).then(function(result) {
+                    window.open(`https://localhost/2375/public/find?search=${result.name}`, "_newtab");
+                });
+            } else {
+
+            }
+        }
+    </script>
 @endsection

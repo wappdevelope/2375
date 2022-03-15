@@ -3,10 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PreviewController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\SearchController;
 
-use Illuminate\Support\Facades\Artisan;
+// use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Route::get('/', [BaseController::class, 'index'])->name('root');
-Route::post('find', [SearchController::class, 'search'])->name('search');
+Route::get('find', [SearchController::class, 'search'])->name('search');
 Route::get('404/{data}', [BaseController::class, 'r404'])->name('r404');
 
 Route::middleware(['auth'])->group(function () {
@@ -30,12 +31,14 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('file-upload', [UploadController::class, 'upload'])->name('upload');
     Route::post('file-del/{id}', [UploadController::class, 'del'])->name('del');
+
+    Route::post('preview', [PreviewController::class, 'preview'])->name('preview');
 });
 
-Route::get('migrate', function () {
-    Artisan::call('migrate');
-});
+// Route::get('migrate', function () {
+//     Artisan::call('migrate');
+// });
 
-Route::get('cache', function () {
-    Artisan::call('optimize:clear');
-});
+// Route::get('cache', function () {
+//     Artisan::call('optimize:clear');
+// });
