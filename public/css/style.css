@@ -56,6 +56,10 @@ header {
 .header-main>div:first-child {
     display: flex;
 }
+.tm{
+    font-size: 11px;
+    margin-right: 3px;
+}
 #logo{
     cursor: pointer;
 }
@@ -805,7 +809,8 @@ footer {
     }
     main{
         background: url(../storage/images/phoneImg.png) no-repeat center/cover;
-        margin-top: 82px;
+        /* margin-top: 82px; */
+        margin-top: 0;
     }
 
     .about {
@@ -979,7 +984,7 @@ footer {
     }
 
     .search {
-        padding: 35px 0;
+        padding: 100px 0;
         scroll-margin-top: 120px;
         margin-bottom: 0;
     }
@@ -1059,7 +1064,8 @@ footer {
 
     main {
         background: url(../storage/images/phoneImg.png) no-repeat center/cover;
-        margin-top: 93px;
+        /* margin-top: 93px; */
+        margin-top: 0;
     }
 
 
@@ -1068,7 +1074,7 @@ footer {
     }
 
     #logo {
-        width: 320px;
+        width: 350px;
         margin: auto;
     }
 
@@ -1266,7 +1272,7 @@ footer {
 
     .search,
     footer {
-        padding: 35px 0;
+        padding: 100px 0;
         scroll-margin-top: 190px;
     }
 
@@ -1354,7 +1360,8 @@ footer {
     }
 
     main {
-        margin-top: 100px;
+        /* margin-top: 100px; */
+        margin-top: 0;
     }
 
     #search-input {
@@ -1362,7 +1369,7 @@ footer {
     }
 
     #logo {
-        width: 350px;
+        width: 375px;
         margin: auto;
     }
 
@@ -1405,7 +1412,7 @@ footer {
         padding: 40px 0;
     }
     .menu{
-        margin-top: 60px !important;
+        margin-top: 30px !important;
     }
     .img-group .images-list {
         display: flex;
@@ -1562,6 +1569,7 @@ footer {
     .search{
         margin-bottom: 0;
         scroll-margin-top: 100px;
+        padding: 130px 0;
     }
     footer{
         /* scroll-margin-top: 120px; */
@@ -1655,7 +1663,7 @@ footer {
     }
 
     #logo {
-        width: 320px;
+        width: 380px;
         margin: auto;
     }
 
@@ -1704,6 +1712,9 @@ footer {
     }
     .page-icons-part{
         top: 125px;
+    }
+    .images-list {
+        padding: 12px 10px;
     }
     .about-us-title,
     .education-info h2,
@@ -1826,7 +1837,10 @@ footer {
         flex-direction: column;
     }
 
-    .search,
+    .search{
+        padding: 140px 0;
+        scroll-margin-top: 0px;
+    }
     footer {
         padding: 35px 0;
         scroll-margin-top: 100px;
@@ -2088,7 +2102,8 @@ footer {
         height: 700px;
     }
     .search{
-        scroll-margin-top: 250px;
+        scroll-margin-top: 150px;
+        padding: 160px 0;
     }
     #about-us{
         scroll-margin-top: -30px;
@@ -2164,6 +2179,7 @@ footer {
     /* height: 50px; */
     padding: 1em;
     position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 10000;

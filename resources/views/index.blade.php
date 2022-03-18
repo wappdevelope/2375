@@ -3,6 +3,33 @@
 @section('content')
     <!-- ---international part start -->
 
+    <section class="top-nav">
+        <div>
+            <img src="{{ asset('storage/images/IGDL.png') }}" alt="IGDL" id="logo">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li>
+                <a href="#about-us">About Us</a>
+            </li>
+            <li>
+                <a href="#certificate">Certificate</a>
+            </li>
+            <li>
+                <a href="#education"> Education</a>
+            </li>
+            <li>
+                <a href="#search"> Search</a>
+            </li>
+            <li>
+                <a href="#contact-us"> Contact Us</a>
+            </li>
+        </ul>
+    </section>
+
 
     <section class="fixed-part ">
         <div class="page-icons-part">
@@ -48,7 +75,7 @@
     </main>
     <!-- international part end -->
 
-    <section class="top-nav">
+    {{-- <section class="top-nav">
         <div>
             <img src="{{ asset('storage/images/IGDL.png') }}" alt="IGDL" id="logo">
         </div>
@@ -73,7 +100,7 @@
                 <a href="#contact-us"> Contact Us</a>
             </li>
         </ul>
-    </section>
+    </section> --}}
 
         <!-- ----start about us -->
         <section class="about-us panel" id="about-us">
@@ -107,7 +134,7 @@
             <div>
                 <div class="certificate-info">
                     <h2 class="certificate-title">certificate</h2>
-                    <p class="certificate-text">Our certificates are designed in line with recognised international grading standards. Neatly presented with critical data and necessary grading results parameters, IGDL certificates are the sought after alternative laboratory choice for fine jewellers and consumers. All IGDL certificates incorporate security measures such as our hologram and full lamination to ensure robustness and authenticity. </p>
+                    <p class="certificate-text">Our certificates are designed in line with recognised international grading standards. Neatly presented with critical data and necessary grading results parameters, IGDL<sup class="tm">TM </sup>  certificates are the sought after alternative laboratory choice for fine jewellers and consumers. All IGDL<sup class="tm">TM </sup> certificates incorporate security measures such as our hologram and full lamination to ensure robustness and authenticity. </p>
                 </div>
             </div>
             <div class="certificate-image">
@@ -129,7 +156,7 @@
                 <div class="education-info">
                     <h2>Education</h2>
                     <h3>GRADING STANDARD</h3>
-                    <p>IGDL grade gemstones and diamonds to an internationally recognised standard using the standard
+                    <p>IGDL<sup class="tm">TM </sup> grade gemstones and diamonds to an internationally recognised standard using the standard
                         D-Z, IF-I3, grading standard which is adhered to by most reputable leading laboratories. </p>
                 </div>
             </div>
@@ -163,7 +190,7 @@
     <section class="diamonds">
         <div>
             <h3>DIAMONDS</h3>
-            <p>At IGDL, our team undertake the grading and certification of diamonds of all shapes, colours
+            <p>At IGDL<sup class="tm">TM </sup>, our team undertake the grading and certification of diamonds of all shapes, colours
                 and sizes. Please enquire if you would like us to certificate your diamonds.</p>
             <img src="{{ asset('storage/images/diamonddss1.png') }}" alt="diamonddss">
         </div>
@@ -177,7 +204,7 @@
             <div class="synthetic-and-word">
                 <h2>SYNTHETIC DETECTION</h2>
                 <p>In a world where laboratory grown diamonds are more readily available, it is imperative to ensure
-                    your natural diamond is in fact not a synthetic or simulant. Here at IGDL we give the assurances to
+                    your natural diamond is in fact not a synthetic or simulant. Here at IGDL<sup class="tm">TM </sup> we give the assurances to
                     our jewellery partners that the stones they source are in fact 100% natural. </p>
             </div>
         </div>
@@ -234,7 +261,7 @@
             </div>
         </div>
         <p class="copyright">
-            &copy;2022 International Gemological And Diamond Laboratories. All rights reserved.
+            &copy;2022 International Gemmological And Diamond Laboratories. All rights reserved.
        </p>
     </footer>
     <!----- end footer part ------>
