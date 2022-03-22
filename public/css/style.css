@@ -94,7 +94,7 @@ header {
 
 /* -----international part start----- */
 main {
-    background: url(../storage/images/AdobeStock_344993732.png) no-repeat center/cover;
+    background: url(../storage/images/AdobeStock_344993732.jpg) no-repeat center/cover;
     margin-top: 100px;
 }
  #mainNav a.highlight {
@@ -172,7 +172,7 @@ main {
 /* .about-us-text  */
 #about-us{
     /* background: #1D1E20; */
-    background-image: url(../storage/images/AdobeStock_288314477\ 1.png);
+    background-image: url(../storage/images/AdobeStock_288314477\ 1.jpg);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -403,7 +403,7 @@ main {
 /*--- start synthetic part---- */
 
 .synthetic {
-    background: url(../storage/images/AdobeStock_331123572.png) no-repeat center/cover;
+    background: url(../storage/images/AdobeStock_331123572.jpg) no-repeat center/cover;
     color: white;
     text-align: center;
     background-attachment: fixed;
