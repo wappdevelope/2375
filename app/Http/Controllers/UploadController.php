@@ -11,8 +11,10 @@ class UploadController extends Controller
 {
     public function upload(Request $request)
     {
+        $fileName  = basename($request->file->getClientOriginalName(), '.pdf');
+
         $input = [
-            'name' => $request->name,
+            'name' => $fileName,
             'file' => $request->file,
         ];
 

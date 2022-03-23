@@ -9,8 +9,8 @@
                 @csrf
 
                 <div class="form-group w-75">
-                    <label for="name">File Name</label>
-                    <input type="text" name="name" class="form-control" id="name">
+                    {{-- <label for="name">File Name</label>
+                    <input type="text" name="name" class="form-control" id="name"> --}}
                     <label for="file">Select PDF</label>
                     <input type="file" name="file" class="form-control" id="file">
                     @if ($errors->any())
