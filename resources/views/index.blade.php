@@ -227,7 +227,7 @@
 
                     <div class="input-div">
                         <input type="text" name="search">
-                        <img src="{{ asset('storage/images/search1.png') }}" alt="search-icon">
+                        <img src="{{ asset('storage/images/search1.png') }}" class="submit" onclick="submit()" alt="search-icon">
                     </div>
                 </form>
             </div>

@@ -76,6 +76,3 @@ function hideMenu(){
 	}
 }
 window.addEventListener("scroll", hideMenu);
-
-
-

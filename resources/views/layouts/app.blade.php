@@ -27,7 +27,7 @@
 
                         <div>
                             <input type="search" id="search-input" placeholder="VERIFY YOUR REPORT" name="search" >
-                            <img src="{{ asset('storage/images/MagnifyingGlass.png') }}" alt="MagnifyingGlass">
+                            <img src="{{ asset('storage/images/MagnifyingGlass.png') }}" class="submit" onclick="submit()" alt="MagnifyingGlass">
                         </div>
                     </form>
                 </div>
