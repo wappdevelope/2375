@@ -12,7 +12,7 @@
                     {{-- <label for="name">File Name</label>
                     <input type="text" name="name" class="form-control" id="name"> --}}
                     <label for="file">Select PDF</label>
-                    <input type="file" name="file" class="form-control" id="file">
+                    <input type="file" name="file[]" class="form-control" id="file" multiple>
                     @if ($errors->any())
                         <div>
                             @foreach ($errors->all() as $error)
@@ -91,7 +91,7 @@
                 }).then(function(response) {
                     return response.json();
                 }).then(function(result) {
-                    window.open(`https://localhost/2375/public/find?search=${result.name}`, "_newtab");
+                    window.open(`http://localhost/2375/public/find?search=${result.name}`, "_newtab");
                 });
             } else {
 

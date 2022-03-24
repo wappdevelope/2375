@@ -11,25 +11,29 @@ class UploadController extends Controller
 {
     public function upload(Request $request)
     {
-        $fileName  = basename($request->file->getClientOriginalName(), '.pdf');
+        // $fileName  = basename($request->file->getClientOriginalName(), '.pdf');
 
         $input = [
-            'name' => $fileName,
+            // 'name.' => $fileName,
             'file' => $request->file,
         ];
 
         Validator::make($input, [
-            'name' => ['required', 'string', 'max:255'],
-            'file' => ['required', 'mimes:pdf'],
+            // 'name.*' => ['required', 'string', 'max:255'],/
+            'file.*' => ['required', 'mimes:pdf'],
         ])->validate();
 
-        $path = $input['file']->store('public/files');
-        $path = str_replace('public/', 'storage/', $path);
+        for ($i = 0; $i < count($input['file']); $i++) {
+            $fileName  = basename($input['file'][$i]->getClientOriginalName(), '.pdf');
 
-        File::create([
-            'name' => $input['name'],
-            'file' => $path,
-        ]);
+            $path = $input['file'][$i]->store('public/files');
+            $path = str_replace('public/', 'storage/', $path);
+
+            File::create([
+                'name' => $fileName,
+                'file' => $path,
+            ]);
+        }
 
         return redirect()->back();
     }
