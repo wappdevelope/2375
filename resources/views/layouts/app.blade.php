@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
 
-    <body>
+    <body onload="document.getElementById('test').style.opacity='1'">
         <!-- ------header start -->
         <header>
             <div class="header-main">

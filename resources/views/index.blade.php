@@ -67,7 +67,7 @@
     <main>
         <div class="opacity-div">
             <div class="img-group">
-                <div>
+                <div id="test">
                     <h1 class="international-title">International Gemmological and diamond laboratories</h1>
                 </div>
             </div>

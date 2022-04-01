@@ -18,7 +18,14 @@ body::-webkit-scrollbar {
     width: 0.5em;
 }
 
-
+#test{
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
 
 body::-webkit-scrollbar-thumb {
     background-color: rgb(167, 167, 167);
