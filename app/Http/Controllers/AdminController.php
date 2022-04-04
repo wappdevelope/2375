@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContactUs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -15,6 +16,15 @@ class AdminController extends Controller
 
         return view('admin.index', [
             'files' => $files,
+        ]);
+    }
+
+    public function contactUs()
+    {
+        $quests = ContactUs::orderBy('created_at', 'desc')->get();
+
+        return view('admin.contact-us', [
+            'quests' => $quests,
         ]);
     }
 

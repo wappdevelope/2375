@@ -81,6 +81,11 @@
 												<a href="{{ route('edit') }}" class="menu-link px-5">Account Settings</a>
 											</div>
 
+                                            <!--begin::Menu item-->
+											<div class="menu-item px-5 my-1">
+												<a href="{{ route('contact-us') }}" class="menu-link px-5">Contact Us</a>
+											</div>
+
                                             <div class="menu-item px-5 my-1">
 												<a href="{{ route('password-update') }}" class="menu-link px-5 my-1">Security</a>
 											</div>

@@ -243,10 +243,12 @@
         <div class="footer-part">
             <div class="contact-us-part">
                 <h3 class="contact-us-title">Contact us</h3>
-                <form action="" class="contact-us-form">
+                <form action="{{ route('req') }}" method="POST" class="contact-us-form">
+                    @csrf
+
                     <div>
                         <label for="text-input">Contact name</label>
-                        <input type="text" id="text-input" name="contact">
+                        <input type="text" id="text-input" name="name">
                     </div>
                     <div>
                         <label for="email-input">Email</label>
@@ -255,6 +257,13 @@
                     <div>
                         <label for="question">Type your question</label>
                         <textarea id="question" name="question"></textarea>
+                    </div>
+                    <div>
+                        @if ($errors->any())
+                            @foreach ($erros->all() as $error)
+                                <div class="errors">{{ $error }}</div>
+                            @endforeach
+                        @endif
                     </div>
                     <button type="submit">Contact us</button>
                 </form>
