@@ -8,8 +8,12 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+        <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
     </head>
 
     <body onload="document.getElementById('test').style.opacity='1'">
@@ -37,6 +41,9 @@
 
         @yield('content')
 
+        <!--begin::Javascript-->
+		<script src="{{ asset('js/plugins.bundle.js') }}"></script>
+		<script src="{{ asset('js/scripts.bundle.js') }}"></script>
         <script src="{{ asset('js/script.js') }}"></script>
     </body>
 </html>

@@ -274,4 +274,33 @@
        </p>
     </footer>
     <!----- end footer part ------>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="{{ asset('storage/images/checked (5).svg') }}" width="75px" alt="checked">
+                        <br>
+                        <h5 class="text-center">Thank you for contacting IGDL. One of our team members will contact you within 48 hours regarding your query.</h5 class="text-success">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (session('success'))
+        <script>
+            $('#exampleModal').modal('show');
+        </script>
+    @endif
 @endsection

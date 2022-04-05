@@ -29,6 +29,6 @@ class ContactAsController extends Controller
             'status' => 0,
         ]);
 
-        return redirect()->back();
+        return redirect()->back()->with('success', 'success');
     }
 }
