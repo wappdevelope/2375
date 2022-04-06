@@ -70,6 +70,9 @@ header {
 #logo{
     cursor: pointer;
 }
+.only-visible-on-mobile{
+    display: none;
+}
 #search-input {
     background: transparent;
     border: none;
@@ -816,8 +819,7 @@ footer {
     }
     main{
         background: url(../storage/images/phoneImg.png) no-repeat center/cover;
-        /* margin-top: 82px; */
-        margin-top: 0;
+        margin-top: 27px;
     }
 
     .about {
@@ -991,7 +993,7 @@ footer {
     }
 
     .search {
-        padding: 100px 0;
+        padding: 35px 0;
         scroll-margin-top: 120px;
         margin-bottom: 0;
     }
@@ -1025,14 +1027,34 @@ footer {
     .pdf-part h2 {
         font-size: 19px;
         line-height: 26px;
-        margin-bottom: 50px;
+        margin-bottom: 0px !important;;
         width: 80%;
         margin: auto;
     }
-
+    .pdf-part{
+        background: #FDFDFD;
+        box-shadow: 0px 4px 24px rgba(196, 196, 196, 0.54);
+        padding:20px;
+        width: 90%;
+        margin: auto;
+        max-width: 350px;
+    }
+    .only-visible-on-mobile{
+        display: block;
+        color: #939498;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        width: 71%;
+        margin: 12px auto 0;
+        text-align: center;
+    }
     .pdf-full-info {
         width: 90%;
         padding: 10px;
+        background: transparent;
+        box-shadow: none;
+        margin-bottom: 0;
     }
 
     .pdf-info h3 {
@@ -1051,7 +1073,21 @@ footer {
     .shared-link ul>li {
         padding: 7px;
     }
+
+    .pdf-info{
+        display: none;
+    }
+    .pdf-part h2 span {
+        text-transform: capitalize;
+    }
+    .functional-icon {
+        justify-content: space-between;
+        width: 44%;
+        margin: 30px auto;
+        max-width: 115px;
+    }
 }
+
 
 /* -------mini tablet------- */
 @media(min-width:576px) and (max-width:768px) {
@@ -1140,7 +1176,43 @@ footer {
     .images-list>li {
         margin-bottom: 0px !important;
     }
-
+    .pdf-file-part {
+        margin-top: 150px;
+    }
+    .pdf-part h2 {
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 0px !important;
+        width: 80%;
+        margin: auto;
+    }
+    .pdf-info{
+        display: none;
+    }
+    .functional-icon {
+        justify-content: space-between;
+        width: 44%;
+        margin: 30px auto;
+        max-width: 115px;
+    }
+    .only-visible-on-mobile {
+        display: block;
+        color: #939498;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        width: 71%;
+        margin: 12px auto 0;
+        text-align: center;
+    }
+    .pdf-part {
+        background: #FDFDFD;
+        box-shadow: 0px 4px 24px rgb(196 196 196 / 54%);
+        padding: 20px;
+        width: 90%;
+        margin: auto;
+        max-width: 350px;
+    }
     .about-us-title,
     .education-info h2,
     .synthetic-and-word h2,
@@ -1327,6 +1399,9 @@ footer {
     .pdf-full-info {
         width: 90%;
         padding: 10px;
+        background-color: transparent;
+        box-shadow: unset;
+        margin-bottom: 0;
     }
 
     .pdf-info h3 {

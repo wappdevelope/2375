@@ -8,6 +8,7 @@
                 Search result for
                 <span> “{{ $name }}”</span>
             </h2>
+            <h3 class="only-visible-on-mobile">If you want to view this file please download it.</h3>
             <div class="pdf-full-info">
                 <div class="pdf-info">
                     <h3>{{ $name }}</h3>
