@@ -11,15 +11,12 @@ class UploadController extends Controller
 {
     public function upload(Request $request)
     {
-        // $fileName  = basename($request->file->getClientOriginalName(), '.pdf');
 
         $input = [
-            // 'name.' => $fileName,
             'file' => $request->file,
         ];
 
         Validator::make($input, [
-            // 'name.*' => ['required', 'string', 'max:255'],/
             'file.*' => ['required', 'mimes:pdf'],
         ])->validate();
 
