@@ -19,7 +19,7 @@
 
     <body onload="document.getElementById('test').style.opacity='1'">
         <!-- ------header start -->
-        <header>
+        <header class="header-home-page">
             <div class="header-main">
                 <div>
                     <a href="{{ route('root') }}">
@@ -31,7 +31,7 @@
                         @csrf
 
                         <div>
-                            <input type="search" id="search-input" placeholder="VERIFY YOUR REPORT" name="search" >
+                            <input type="search" id="search-input" placeholder="Verify Your Report" name="search" >
                             <img src="{{ asset('storage/images/MagnifyingGlass.png') }}" class="submit" onclick="submit()" alt="MagnifyingGlass">
                         </div>
                     </form>

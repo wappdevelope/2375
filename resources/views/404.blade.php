@@ -2,6 +2,27 @@
 
 @section('content')
     <!-- ----start not-found part---- -->
+    <header class="not-found-menu">
+        <div class="header-main">
+            <div>
+                <a href="{{ route('root') }}">
+                    <img src="{{ asset('storage/images/IGDL.png') }}" alt="IGDL" id="logo">
+                </a>
+            </div>
+            <div class="search-input-field">
+                <form action="{{ route('search') }}" method="GET">
+                    @csrf
+
+                    <div>
+                        <input type="search" id="search-input" placeholder="Verify Your Report" name="search" >
+                        <img src="{{ asset('storage/images/MagnifyingGlass.png') }}" class="submit" onclick="submit()" alt="MagnifyingGlass">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
     <section>
         <div class="not-found-part">
             <div>

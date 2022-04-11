@@ -27,6 +27,16 @@
             <li>
                 <a href="#contact-us"> Contact Us</a>
             </li>
+            <li>
+                <form action="{{ route('search') }}" method="GET">
+                    @csrf
+
+                    <div>
+                        <input type="search" id="search-input" placeholder="Verify Your Report" name="search" >
+                        <img src="{{ asset('storage/images/MagnifyingGlass.png') }}" class="submit" onclick="submit()" alt="MagnifyingGlass">
+                    </div>
+                </form>
+            </li>
         </ul>
     </section>
 
