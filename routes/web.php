@@ -5,6 +5,7 @@ use App\Http\Controllers\BaseController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AnsweredController;
 use App\Http\Controllers\ContactAsController;
+use App\Http\Controllers\DeleteController;
 use App\Http\Controllers\PreviewController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\SearchController;
@@ -40,6 +41,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('contact-us', [AdminController::class, 'contactUs'])->name('contact-us');
 
     Route::post('answer/{id}', [AnsweredController::class, 'answer'])->name('answer');
+
+    Route::delete('del/{id}', [DeleteController::class, 'del'])->name('delete');
 });
 
 // Route::get('migrate', function () {

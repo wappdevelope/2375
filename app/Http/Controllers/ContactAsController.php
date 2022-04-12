@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactUs as MailContactUs;
 use App\Models\ContactUs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class ContactAsController extends Controller
@@ -28,6 +30,8 @@ class ContactAsController extends Controller
             'question' => $input['question'],
             'status' => 0,
         ]);
+
+        Mail::to('enquiries@igdl.org')->send(new MailContactUs($input['email']));
 
         return redirect()->back()->with('success', 'success');
     }

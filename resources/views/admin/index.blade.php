@@ -91,7 +91,7 @@
                 }).then(function(response) {
                     return response.json();
                 }).then(function(result) {
-                    window.open(`http://localhost/2375/public/find?search=${result.name}`, "_newtab");
+                    window.open(`http://localhost/2375/public/find?search=${result.name}`);
                 });
             } else {
 
